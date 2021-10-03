@@ -2,13 +2,92 @@
 <html>
     <head>
      <meta charset="UTF-8">
-     <title>Hospital<title>
+     <title>Hospital</title>
+
+     <link rel="stylesheet" href="src/css/reset.css">
+     <link rel="stylesheet" href="src/css/style.css">
+     <link rel="stylesheet" href="src/js/script.js">
     </head>
 
     <body>
 
     <header>
+        <div class="agendamento-online">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="733b7762-8faa-4a40-9cfa-eca04e094318">
+            <input type="hidden" name="redirectTo" value="exemplo.">
 
+            <h1 class="titulo-agendamento">Agendamento Online:</h1>
+
+            <div class="informações-consulta">
+
+                <fieldset class="tipo-consulta">
+                    <legend>Qual o tipo de consulta?</legend>
+
+                    <select name="message">
+                        <option>Cardiologia</option>
+                        <option>Dermatologia</option>
+                        <option>Ginecologia</option>
+                        <option>Ortopedia</option>
+                        <option>Urologia</option>
+                        <option>Pediatria</option>
+                        <option>Psiquiatria</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="-atendimento">
+                    <legend class="perido-atendimento">Qual horário de atendimento?</legend>
+                        <select name="message">
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                        <select class="horarios-atendimento" name="message"> 
+                            <div class="horarios-manha">
+                                <option>7:00</option>
+                                <option>8:00</option>
+                                <option>9:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                            </div>
+                            <div class="horarios-tarde">
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                            </div>
+                            <div class="horarios-noite">
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                            </div>
+                        </select>
+                </fieldset>
+
+                <label for="mensagem">Descreva os seus sintomas</label>
+                <textarea style="resize: none" cols="100" rows="10" name="message" class="sintomas" required></textarea>
+            </div>
+
+                <div class="contatos">
+                    <h2 class="titulo-contatos">Seus contatos:</h2>
+
+                    <label for="nome-sobrenome">Nome e Sobrenome</label>
+                    <input type="text" id="nome-sobrenome" name="name" required> 
+
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" id="e-mail" name="email" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="phone" required placeholder="(XX) XXXXX-XXXX"> 
+                </div>
+
+                <input type="submit" value="Enviar formulário" class="enviar-formulario">
+            </form>
+        </div>
    </header>
 
    <main>
@@ -21,4 +100,5 @@
 
    </body>
 
-   </html>
+</html>
+

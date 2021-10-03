@@ -1,0 +1,59 @@
+CSS Formulário
+.agendamento-online{
+    display: block;
+    margin: 0 0 5px;
+    padding: 20px 0px 5px;
+    width: 30%;
+}
+h1{
+    font-size: 15;
+    font-style: bold;
+}
+fieldset {
+    width: 30%;
+}
+fieldset option{
+    text-align: center;
+    width: 15%;
+}
+textarea{   
+    width: 31.8%;
+}
+form label{
+    display: block;
+}
+form input{
+    width: 20%;
+    border-radius: 5px;
+}
+.enviar-formulario{
+    display: block;
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    width: 20%;
+    border-radius: 10px;
+}
+.enviar-formulario:hover {
+    animation: balanço 0.7s alternate;
+    cursor: pointer;
+}
+@keyframes balanço{
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-2%);
+    }
+    40%{
+        transform: translateX(2%);
+    }
+    60%{
+        transform: translateX(-2%);
+    }
+    80%{
+        transform: translateX(2%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
