@@ -2,6 +2,8 @@
 <html>
     <head>
      <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Hospital</title>
 
      <link rel="stylesheet" href="src/css/reset.css">
@@ -12,6 +14,16 @@
     <body>
 
     <header>
+        <nav>
+            <a href="#" class="menu" onclick= "abrirMenu()">&#9776Menu</a>
+        </nav>
+        <div id="in-menu" class="Mmenu">
+            <a  class="menu" href="#" onclick="fecharMenu()">&times Fechar</a>
+           <a  class="menu" href="#">Home</a>
+           <a class="menu" href="#">Sobre-nos</a>
+           <a class="menu" href="#">contatos</a> 
+        </div>
+
         <div class="agendamento-online">
             <form action="https://api.staticforms.xyz/submit" method="post">
             <input type="hidden" name="accessKey" value="733b7762-8faa-4a40-9cfa-eca04e094318">
@@ -98,6 +110,8 @@
 
    </footer>
 
+
+   <script src="menu.js"></script>
    </body>
 
 </html>
