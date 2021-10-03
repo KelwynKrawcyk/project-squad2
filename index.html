@@ -2,13 +2,27 @@
 <html>
     <head>
      <meta charset="UTF-8">
-     <title>Hospital<title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="style.css">
+
+     <title>Hospital</title>
+
     </head>
 
     <body>
 
     <header>
-
+        <nav>
+            <a href="#" class="menu" onclick= "abrirMenu()">&#9776Menu</a>
+        </nav>
+        <div id="in-menu" class="Mmenu">
+            <a  class="menu" href="#" onclick="fecharMenu()">&times Fechar</a>
+           <a  class="menu" href="#">Home</a>
+           <a class="menu" href="#">Sobre-nos</a>
+           <a class="menu" href="#">contatos</a> 
+        </div>
    </header>
 
    <main>
@@ -18,7 +32,7 @@
    <footer>
 
    </footer>
-
+                <script src="menu.js"></script>
+                <script src="script.js"></script>
    </body>
-
    </html>
