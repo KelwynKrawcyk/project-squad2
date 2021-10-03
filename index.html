@@ -2,6 +2,8 @@
 <html>
     <head>
      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width">
+     
      <title>Hospital</title>
 
      <link rel="stylesheet" href="src/css/reset.css">
@@ -14,7 +16,8 @@
     <header>
         <div class="agendamento-online">
             <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="733b7762-8faa-4a40-9cfa-eca04e094318">
+            <input type="hidden" name="accessKey" value="3059cd06-7470-4302-a739-2af1fb530ff5">
+            <input type="hidden" name="subject" value="Nova consulta" />
             <input type="hidden" name="redirectTo" value="exemplo.">
 
             <h1 class="titulo-agendamento">Agendamento Online:</h1>
@@ -35,7 +38,7 @@
                     </select>
                 </fieldset>
 
-                <fieldset class="-atendimento">
+                <fieldset class="atendimento">
                     <legend class="perido-atendimento">Qual horário de atendimento?</legend>
                         <select name="message">
                             <option>Manhã</option>
@@ -76,13 +79,13 @@
                     <h2 class="titulo-contatos">Seus contatos:</h2>
 
                     <label for="nome-sobrenome">Nome e Sobrenome</label>
-                    <input type="text" id="nome-sobrenome" name="name" required> 
+                    <input type="text" id="nome-sobrenome" name="name" required class="contato-nome">  
 
                     <label for="e-mail">E-mail</label>
-                    <input type="email" id="e-mail" name="email" required placeholder="seuemail@dominio.com">
+                    <input type="email" id="e-mail" name="email" required placeholder="seuemail@dominio.com" class="contato-email">
 
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="phone" required placeholder="(XX) XXXXX-XXXX"> 
+                    <input type="tel" id="telefone" name="phone" required placeholder="(XX) XXXXX-XXXX" class="contato-telefone"> 
                 </div>
 
                 <input type="submit" value="Enviar formulário" class="enviar-formulario">
