@@ -10,6 +10,10 @@
 .principal{
     background-color: gray;
     border: solid rgb(87, 81, 81);
+    position: fixed;
+    width: 100%;
+    margin: 0 auto 500px auto;
+
 }
 
 .titulo{
