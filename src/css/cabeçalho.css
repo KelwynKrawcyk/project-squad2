@@ -1,0 +1,32 @@
+.principal{
+    background-color: gray;
+    border: solid rgb(87, 81, 81);
+}
+
+.titulo{
+    padding-top: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: rgb(95, 31, 31);
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 0.3em;
+    padding-bottom: 0.8em;
+}
+
+/*barra de rolamento |que aparecerá quando tiver mais conteudo na tela*/
+::-webkit-scrollbar{
+    width: 0.5em;
+    background-color: white;
+    border: 0.9em solid white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:gray;
+    border-radius: 0.5em;
+    border: 0.2em solid rgb(101, 102, 100)
+}
