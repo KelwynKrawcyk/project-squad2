@@ -64,6 +64,12 @@ form input{
     animation: balanço 0.7s alternate;
     cursor: pointer;
 }
+.rodapé{
+  background-color: black;
+  height: 6em;
+  width: 100%;
+}
+
 @keyframes balanço{
     0%{
         transform: translateX(0%);
