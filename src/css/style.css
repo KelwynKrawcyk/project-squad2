@@ -22,8 +22,7 @@
     color: black;
 }
 
-/*CSS Formulário*/
-
+//CSS do formulário
 .agendamento-online{
     display: block;
     margin: 0 0 5px;
@@ -63,12 +62,6 @@ form input{
     animation: balanço 0.7s alternate;
     cursor: pointer;
 }
-.rodapé{
-  background-color: black;
-  height: 6em;
-  width: 100%;
-}
-
 @keyframes balanço{
     0%{
         transform: translateX(0%);
@@ -105,3 +98,9 @@ form input{
         width: 45%;
     }
 }
+.rodapé{
+    background-color: black;
+    height: 6em;
+    width: 100%;
+  }
+  
