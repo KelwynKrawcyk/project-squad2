@@ -1,3 +1,4 @@
+
 .Mmenu{
     background-color: rgb(70, 70, 255);
     width: 0em;
@@ -23,6 +24,7 @@
 }
 
 /*CSS Formulário*/
+
 .agendamento-online{
     display: block;
     margin: 0 0 5px;
@@ -42,6 +44,7 @@ fieldset option{
 }
 textarea{   
     width: 31.8%;
+    border-radius: 3px;
 }
 form label{
     display: block;
@@ -79,5 +82,21 @@ form input{
     }
     100%{
         transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    .informações-consulta, .enviar-formulario {
+        width: auto;
+    }
+    .atendimento{
+        width: auto;
+    }
+    .sintomas{
+        width: 50%;
+        height: 50px;
+    }
+    .contato-nome, .contato-email, .contato-telefone{
+        width: 45%;
     }
 }
