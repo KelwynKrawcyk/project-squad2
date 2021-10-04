@@ -2,7 +2,7 @@ var menu = document.querySelector("#in-menu")
 
 
 function abrirMenu(){
-    menu.style.width = "25em";
+    menu.style.width = "18em";
 }
 
 function fecharMenu(){
