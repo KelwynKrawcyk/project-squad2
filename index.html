@@ -10,7 +10,10 @@
      <link rel="stylesheet" href="src/css/style.css">
      <link rel="stylesheet" href="src/js/script.js">
      <link rel="stylesheet" href="src/css/cabeçalho.css">
+     <script src="src/js/form.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     </head>
 
     <body>
@@ -32,84 +35,180 @@
            <a class="menu" href="#">Configuraçoes</a>
         </div>
 
-        <div class="agendamento-online">
-            <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="3059cd06-7470-4302-a739-2af1fb530ff5">
-            <input type="hidden" name="subject" value="Nova consulta" />
-            <input type="hidden" name="redirectTo" value="exemplo.">
-
-            <h1 class="titulo-agendamento">Agendamento Online:</h1>
-
-            <div class="informações-consulta">
-
-                <fieldset class="tipo-consulta">
-                    <legend>Qual o tipo de consulta?</legend>
-
-                    <select name="message">
-                        <option>Cardiologia</option>
-                        <option>Dermatologia</option>
-                        <option>Ginecologia</option>
-                        <option>Ortopedia</option>
-                        <option>Urologia</option>
-                        <option>Pediatria</option>
-                        <option>Psiquiatria</option>
-                    </select>
-                </fieldset>
-
-                <fieldset class="atendimento">
-                    <legend class="perido-atendimento">Qual horário de atendimento?</legend>
-                        <select name="message">
-                            <option>Manhã</option>
-                            <option>Tarde</option>
-                            <option>Noite</option>
-                        </select>
-                        <select class="horarios-atendimento" name="message"> 
-                            <div class="horarios-manha">
-                                <option>7:00</option>
-                                <option>8:00</option>
-                                <option>9:00</option>
-                                <option>10:00</option>
-                                <option>11:00</option>
-                                <option>12:00</option>
-                            </div>
-                            <div class="horarios-tarde">
-                                <option>13:00</option>
-                                <option>14:00</option>
-                                <option>15:00</option>
-                                <option>16:00</option>
-                                <option>17:00</option>
-                                <option>18:00</option>
-                            </div>
-                            <div class="horarios-noite">
-                                <option>19:00</option>
-                                <option>20:00</option>
-                                <option>21:00</option>
-                                <option>22:00</option>
-                            </div>
-                        </select>
-                </fieldset>
-
-                <label for="mensagem">Descreva os seus sintomas</label>
-                <textarea style="resize: none" cols="100" rows="10" name="message" class="sintomas" required></textarea>
-            </div>
-
-                <div class="contatos">
-                    <h2 class="titulo-contatos">Seus contatos:</h2>
-
-                    <label for="nome-sobrenome">Nome e Sobrenome</label>
-                    <input type="text" id="nome-sobrenome" name="name" required class="contato-nome">  
-
-                    <label for="e-mail">E-mail</label>
-                    <input type="email" id="e-mail" name="email" required placeholder="seuemail@dominio.com" class="contato-email">
-
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="phone" required placeholder="(XX) XXXXX-XXXX" class="contato-telefone"> 
-                </div>
-
-                <input type="submit" value="Enviar formulário" class="enviar-formulario">
-            </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+            <form action="https://api.staticforms.xyz/submit" method="post" class="form">
+                <input type="hidden" name="accessKey" value="3059cd06-7470-4302-a739-2af1fb530ff5"> 
+                <input type="hidden" name="subject" value="Nova consulta" />
+                <input type="hidden" name="redirectTo" value="exemplo.">
+    
+                <h1 class="text-center">Consulta Online</h1>
+                    <!-- Progress bar -->
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+                        
+                        <div
+                            class="progress-step progress-step-active"
+                            data-title="Dados"
+                        ></div>
+                        <div class="progress-step" data-title="Contato"></div>
+                        <div class="progress-step" data-title="Consulta"></div>
+                        <div class="progress-step" data-title="Agenda"></div>
+                    </div>
+    
+                    <!-- Steps -->
+                    <div class="form-step form-step-active">
+                        <div class="input-group">
+                            <label for="name">Nome e sobrenome</label>
+                            <input type="text" name="name" id="username" />
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Data de nascimento</label>
+                            <input type="date" name="message" id="dob" />
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="phone">Telefone</label>
+                            <input type="text" name="phone" id="phone" required placeholder="(XX) XXXXX-XXXX" />
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" required placeholder="seuemail@dominio.com" />
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <a href="#" class="btn btn-next">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <fieldset>
+                                <label>Tipo de consulta</label >
+                                <select class="tipo-consulta" name="message">
+                                    <option>Cardiologia</option>
+                                    <option>Dermatologia</option>
+                                    <option>Ginecologia</option>
+                                    <option>Ortopedia</option>
+                                    <option>Urologia</option>
+                                    <option>Pediatria</option>
+                                    <option>Psiquiatria</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem">Descreva os seus sintomas</label>
+                            <textarea style="resize: none" cols="45" rows="3" name="message" class="sintomas"></textarea>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <a href="#" class="btn btn-next">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="dob">Data da consulta</label>
+                            <input type="date" name="message" id="dob" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Horário da consulta</label>
+                            <input type="time" id="appt" name="message"
+                            min="08:00" max="17:00" required>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <input type="submit" value="Enviar formulário" class="btn" />
+                        </div>
+                    </div>
+                </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
    </header>
+
+   <div class="container-fluid">
+    <div class="row"></div>
+        <div class="col-md-12">
+            <h3>Pacientes
+                <small class="text-muted">Hospital Panaceia</small>
+            </h3>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary">Adicionar Pacientes</button>
+            </div>        
+        </div>
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Paciente</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">consulta</th>
+                            <th scope="col">horario</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Nicolas</td>
+                            <td>22</td>
+                            <td>Cardiologia</td>
+                            <td>13:30</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Robson</td>
+                            <td>19</td>
+                            <td>Urologia</td>
+                            <td>19:58</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>renato</td>
+                            <td>33</td>
+                            <td>Psiquiatria</td>
+                            <td>18:40</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Jonas</td>
+                            <td>28</td>
+                            <td>Dermatologia</td>
+                            <td>17:00</td>
+                          </tr>
+                        </tbody>
+                  </table>
+            </div>
+        </div>
+</div>
 
    <main>
     
@@ -119,8 +218,12 @@
         
    </footer>
 
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
    <script src="src/js/menu.js"></script>
+
    </body>
 
 </html>
