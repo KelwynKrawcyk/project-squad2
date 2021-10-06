@@ -12,8 +12,8 @@
     border: solid rgb(87, 81, 81);
     position: fixed;
     width: 100%;
-    margin: 0 auto 500px auto;
-
+    margin: 0 auto 500px auto; 
+    z-index: 1;  
 }
 
 .titulo{

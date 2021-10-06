@@ -23,6 +23,7 @@ prevBtns.forEach((btn) => {
 });
 
 function updateFormSteps() {
+  event.preventDefault();
   formSteps.forEach((formStep) => {
     formStep.classList.contains("form-step-active") &&
       formStep.classList.remove("form-step-active");
