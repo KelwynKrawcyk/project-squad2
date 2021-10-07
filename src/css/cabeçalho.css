@@ -43,3 +43,11 @@
     border-radius: 0.5em;
     border: 0.2em solid rgb(101, 102, 100)
 }
+
+
+
+@media screen and (max-width: 480px){
+    .principal, .titulo, .subtitulo{
+      width: auto;
+    }
+}

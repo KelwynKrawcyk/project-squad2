@@ -11,6 +11,7 @@
      <link rel="stylesheet" href="src/css/cabeçalho.css">
      <link rel="stylesheet" href="src/css/form.css">
      <link rel="stylesheet" href="src/js/script.js">
+     <link rel="stylesheet" href="src/css/consultas.css">
      <script src="src/js/form.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -32,8 +33,8 @@
            <a  class="menu" href="#">Home</a>
            <a class="menu" href="#">Sobre-nos</a>
            <a class="menu" href="#">Contatos</a>
-           <a class="menu" href="#">Paceintes</a>
-           <a class="menu" href="#">Configuraçoes</a>
+           <a class="menu" href="#">Pacientes</a>
+           <a class="menu" href="#">Configurações</a>
         </div>
 
         <br>
@@ -54,7 +55,38 @@
         <br>
         <br>
         <br>
-        
+      
+      
+        <article class="consultas">
+            <h1 class="consultas-titulo">Consultas: especialidades disponiveis</h1>
+            <ul class="bloco-consultas">
+                <img class="img-cardio" src="Imagens/img/images/cardiologia_1.png">
+                <li class="cardio">Cardiologia</li>
+                <img class="img-psico" src="Imagens/img/images/psicologo_1.png">
+                <li class="psico">Psicologia</li>
+                <img class="img-clinico" src="Imagens/img/images/historico_medico_1.png">
+                <li class="clinico">Clínico Geral</li>
+                <img class="img-odonto" src="Imagens/img/images/odontologia_1.png">
+                <li class="odonto">Odontologia</li>
+                <img class="img-nutri" src="Imagens/img/images/nutricao_1.png">
+                <li class="nutri">Nutrição</li>
+                <img class="img-fisioterapia" src="Imagens/img/images/fisioterapia_1.png">
+                <li class="fisioterapia">Fisioterapia</li>
+                <img class="img-derma" src="Imagens/img/images/dermatologia_1.png">
+                <li class="derma">Dermatologia</li>
+                <img class="img-ofta" src="Imagens/img/images/prescricao_de_oculos_1.png">
+                <li class="ofta">Oftamologia</li>
+                <img class="img-vacina" src="Imagens/img/images/protecao_1.png">
+                <li class="vacina">Vacina</li>
+                <img class="img-neuro" src="Imagens/img/images/neuronio_1.png">
+                <li class="neuro">Neurologia</li>
+                <img class="img-pediatria" src="Imagens/img/images/pediatria_1.png">
+                <li class="pediatria">Pediatria</li>
+                <img class="img-trauma" src="Imagens/img/images/osso_1.png">
+                <li class="trauma">traumatologia</li>
+            </ul>            
+        </article>
+   
             <form action="https://api.staticforms.xyz/submit" method="post" class="form">
                 <input type="hidden" name="accessKey" value="3059cd06-7470-4302-a739-2af1fb530ff5"> 
                 <input type="hidden" name="subject" value="Nova consulta" />
@@ -101,6 +133,8 @@
                             <a href="#" class="btn btn-prev">Anterior</a>
                             <a href="#" class="btn btn-next">Próximo</a>
                         </div>
+                   
+
                     </div>
                     <div class="form-step">
                         <div class="input-group">
