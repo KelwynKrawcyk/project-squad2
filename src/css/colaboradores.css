@@ -1,0 +1,43 @@
+.caixa-colaboradores {
+    border: 0.1rem solid #ccc;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    width: 68.75rem;
+    height: 18.75rem;
+    border-radius: 0.35rem;
+    margin-left: 23%;
+    
+      
+}
+
+.titulo-apresentação {
+    font-size: 1.563rem;
+    display: inline-block;
+    
+   
+
+}
+
+.colaboradores2 {
+    display: inline-block;
+    font-size: 1.177rem;
+    padding: 0rem 0.2rem 0rem 2.1rem;
+    
+    
+    
+   
+    
+
+}
+
+
+.Bernardo, .Ígor, .Kauã, .Thauan, .Kelwyn, .Manu {
+    display:inline-block;
+    width: 6.875rem;
+    height: 6.875rem;
+    border-radius: 4.375rem;
+    border: solid #cccccc;
+    margin: 0rem 2rem 0rem 1.9rem;
+    
+}
