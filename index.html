@@ -7,10 +7,11 @@
      <title>Hospital</title>
 
      <link rel="stylesheet" href="src/css/reset.css">
-     <link rel="stylesheet" href="src/css/style.css">
      <link rel="stylesheet" href="src/css/cabeçalho.css">
-     <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/css/form.css">
+     <link rel="stylesheet" href="src/css/crud.css">
+     <link rel="stylesheet" href="src/css/style.css">
+     <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/js/script.js">
      <script src="src/js/form.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
@@ -21,33 +22,26 @@
     <body>
 
     <header>
-        <nav class="principal">
-            
-            <h1 class="titulo">Hospital Panaceia</h1>
-            <h2 class="subtitulo">-Desde 1947 salvando vidas-</h2>
-            <a href="#" class = "button-menu">&#9776Menu</a>
-        </nav>
-        
-        <div id="in-menu" class="Mmenu"> 
-            <a  class="menu" href="#" id="fecharM">&times Fechar</a>
-           <a  class="menu" href="#">Home</a>
-           <a class="menu" href="#">Sobre-nos</a>
-           <a class="menu" href="#">Contatos</a>
-           <a class="menu" href="#">Paceintes</a>
-           <a class="menu" href="#">Configuraçoes</a>
+        <div class="barra-de-navegação">
+            <nav class="principal">
+                
+                <h1 class="titulo">Hospital Panaceia</h1>
+                <div id="in-menu" class="Mmenu"> 
+                    <a  class="menu" href="#" id="fecharM">&times Fechar</a>
+                    <a  class="menu" href="#">Home</a>
+                    <a class="menu" href="#">Sobre-nos</a>
+                    <a class="menu" href="#">Contatos</a>
+                    <a class="menu" href="#">Pacientes</a>
+                    <a class="menu" href="#">Configuraçoes</a>
+                </div>
+                <a href="#" class = "button-menu">&#9776Menu</a>
+                <h2 class="subtitulo">-Desde 1947 salvando vidas-</h2>
+
+            </nav>
         </div>
 
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div> 
-            
-        </div>
-
         <br>
         <br>
         <br>
@@ -62,7 +56,7 @@
                 <input type="hidden" name="redirectTo" value="exemplo.">
     
                 <h1 class="text-center">Consulta Online</h1>
-                    <!-- Progress bar -->
+                    <!-- Barra de progresso -->
                     <div class="progressbar">
                         <div class="progress" id="progress"></div>
                         
@@ -75,7 +69,7 @@
                         <div class="progress-step" data-title="Agenda"></div>
                     </div>
     
-                    <!-- Steps -->
+                    <!-- Passos -->
                     <div class="form-step form-step-active">
                         <div class="input-group">
                             <label for="name">Nome e sobrenome</label>
@@ -155,95 +149,101 @@
             <br>
         </div>
    </header>
-
-
  
-   <div class="container-fluid">
-    <div class="row"></div>
-        <div class="col-md-12">
-            <h3>Pacientes
-                <small class="text-muted">Hospital Panaceia</small>
-            </h3>
+   <div class="crud">
+        <div class="container-fluid">
+            <div class="row"></div>
+                <div class="col-md-12">
+                    <h3>Pacientes
+                        <small class="text-muted">Hospital Panaceia</small>
+                    </h3>
+                </div>
         </div>
-    </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-primary">Adicionar Pacientes</button>
-            </div>        
-        </div>
-        <div class="row" style="margin-top: 25px;">
-            <div class="col-md-12">
-                <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Paciente</th>
-                            <th scope="col">Idade</th>
-                            <th scope="col">consulta</th>
-                            <th scope="col">horario</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Nicolas</td>
-                            <td>22</td>
-                            <td>Cardiologia</td>
-                            <td>13:30</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Robson</td>
-                            <td>19</td>
-                            <td>Urologia</td>
-                            <td>19:58</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>renato</td>
-                            <td>33</td>
-                            <td>Psiquiatria</td>
-                            <td>18:40</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Jonas</td>
-                            <td>28</td>
-                            <td>Dermatologia</td>
-                            <td>17:00</td>
-                          </tr>
-                        </tbody>
-                  </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary">Adicionar Pacientes</button>
+                </div>        
             </div>
-        </div>
-</div>
+                <div class="row" style="margin-top: 25px;">
+                    <div class="col-md-12">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Paciente</th>
+                                    <th scope="col">Idade</th>
+                                    <th scope="col">consulta</th>
+                                    <th scope="col">horario</th>
+                                </tr>
+                            </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Nicolas</td>
+                                    <td>22</td>
+                                    <td>Cardiologia</td>
+                                    <td>13:30</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Robson</td>
+                                    <td>19</td>
+                                    <td>Urologia</td>
+                                    <td>19:58</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>renato</td>
+                                    <td>33</td>
+                                    <td>Psiquiatria</td>
+                                    <td>18:40</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Jonas</td>
+                                    <td>28</td>
+                                    <td>Dermatologia</td>
+                                    <td>17:00</td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+    </div>
 <main> 
-    <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
-     <div class="titulo-apresentação">Colaboradores</div>
-     <br> 
-     <br>   
-     <br>   
-     <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
-     <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
-     <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
-     <a href="" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do "></a>
-     <a href="" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
-     <a href="" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
 
-                <ul class="Colaboradores"></ul>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
+        <div class="titulo-apresentação">Colaboradores</div>
+            <br> 
+            <div class="imagens">
+                <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
+                <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
+                <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
+                <a href="https://www.linkedin.com/in/kelwynkrawcyk/" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do Kelwyn"></a>
+                <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
+                <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
+            </div>
+            <div class="nomes-colaboradores">
+                <ul class="Colaboradores">
                     <li class="colaboradores2">Bernardo Alves</li>
                     <li class="colaboradores2"> &nbsp Kauã Silva</li>
                     <li class="colaboradores2"> &nbsp &nbsp Igor Centofante</li>
                     <li class="colaboradores2">Kelwyn Krawcyk</li>
                     <li class="colaboradores2">Thauan de Albquerque</li>
                     <li class="colaboradores2">Manuela Lima</li>
-      <br>
-      <br> 
-      <br>
-      <br>
-      <br>                
+                <ul>
+            </div>
+    </div>
 
-
+    <br>
+    <br>
+    <br>
+    <br>
        
    </main>
 

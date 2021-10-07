@@ -1,15 +1,17 @@
 .button-menu{
+    display: inline;
     right: 5px;
     font-size: 25px;
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .principal{
-    background-color: gray;
+    background-color: #363636;
     border: solid rgb(87, 81, 81);
+    display: inline-block;
     position: fixed;
     width: 100%;
     margin: 0 auto 500px auto; 
@@ -21,14 +23,17 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 3em;
-    color: rgb(95, 31, 31);
+    color: white;
 }
 
 .subtitulo{
     text-align: center;
+    margin-left: 33%;
     font-size: 18px;
     padding-top: 0.3em;
     padding-bottom: 0.8em;
+    color: white;
+    display: inline-block;
 }
 
 /*barra de rolamento |que aparecerá quando tiver mais conteudo na tela*/
@@ -42,4 +47,17 @@
     background-color:gray;
     border-radius: 0.5em;
     border: 0.2em solid rgb(101, 102, 100)
+}
+
+@media screen and (max-width: 480px) { 
+    .principal{
+        display: inline-block;
+    }
+    .subtitulo{
+        margin-left: 13%;
+        font-size: 100%;
+    }
+    .button-menu{
+        font-size: 150%;
+    }
 }
