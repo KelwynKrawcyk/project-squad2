@@ -1,6 +1,19 @@
+.button-menu{
+    right: 5px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 .principal{
     background-color: gray;
     border: solid rgb(87, 81, 81);
+    position: fixed;
+    width: 100%;
+    margin: 0 auto 500px auto; 
+    z-index: 1;  
 }
 
 .titulo{
@@ -29,4 +42,12 @@
     background-color:gray;
     border-radius: 0.5em;
     border: 0.2em solid rgb(101, 102, 100)
+}
+
+
+
+@media screen and (max-width: 480px){
+    .principal, .titulo, .subtitulo{
+      width: auto;
+    }
 }

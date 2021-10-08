@@ -7,115 +7,219 @@
      <title>Hospital</title>
 
      <link rel="stylesheet" href="src/css/reset.css">
-     <link rel="stylesheet" href="src/css/style.css">
-     <link rel="stylesheet" href="src/js/script.js">
      <link rel="stylesheet" href="src/css/cabeçalho.css">
+     <link rel="stylesheet" href="src/css/form.css">
+     <link rel="stylesheet" href="src/css/crud.css">
+     <link rel="stylesheet" href="src/css/style.css">
+     <link rel="stylesheet" href="src/css/colaboradores.css">
+     <link rel="stylesheet" href="src/js/script.js">
+     <link rel="stylesheet" href="src/css/consultas.css">
+     <script src="src/js/form.js" defer></script>
+     <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
+     
     </head>
 
     <body>
 
     <header>
-        <nav class="principal">
-            <a href="#" class="menu" onclick= "abrirMenu()">&#9776Menu</a>
-            <h1 class="titulo">Hospital Pananceia</h1>
-            <h2 class="subtitulo">-Desde 1947 salvando vidas-</h2>
-        </nav>
-        <div id="in-menu" class="Mmenu">
-            <a  class="menu" href="#" onclick="fecharMenu()">&times Fechar</a>
-           <a  class="menu" href="#">Home</a>
-           <a class="menu" href="#">Sobre-nos</a>
-           <a class="menu" href="#">contatos</a> 
+
+        <div class="barra-de-navegação">
+            <nav class="principal">
+                
+                <h1 class="titulo">Hospital Panaceia</h1>
+                <div id="in-menu" class="Mmenu"> 
+                    <a  class="menu" href="#" id="fecharM">&times Fechar</a>
+                    <a  class="menu" href="#">Home</a>
+                    <a class="menu" href="#">Sobre-nos</a>
+                    <a class="menu" href="#">Contatos</a>
+                    <a class="menu" href="#">Pacientes</a>
+                    <a class="menu" href="#">Configuraçoes</a>
+                </div>
+                <a href="#" class = "button-menu">&#9776Menu</a>
+                <h2 class="subtitulo">-Desde 1947 salvando vidas-</h2>
+
+            </nav>
         </div>
 
-        <div class="agendamento-online">
-            <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="3059cd06-7470-4302-a739-2af1fb530ff5">
-            <input type="hidden" name="subject" value="Nova consulta" />
-            <input type="hidden" name="redirectTo" value="exemplo.">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <article class="consultas">
+            <h1 class="consultas-titulo">Consultas: especialidades disponiveis</h1>
+            <ul class="bloco-consultas">
+                <img class="img-cardio" src="Imagens/img/images/cardiologia_1.png">
+                <li class="cardio">Cardiologia</li>
+                <img class="img-psico" src="Imagens/img/images/psicologo_1.png">
+                <li class="psico">Psicologia</li>
+                <img class="img-clinico" src="Imagens/img/images/historico_medico_1.png">
+                <li class="clinico">Clínico Geral</li>
+                <img class="img-odonto" src="Imagens/img/images/odontologia_1.png">
+                <li class="odonto">Odontologia</li>
+                <img class="img-nutri" src="Imagens/img/images/nutricao_1.png">
+                <li class="nutri">Nutrição</li>
+                <img class="img-fisioterapia" src="Imagens/img/images/fisioterapia_1.png">
+                <li class="fisioterapia">Fisioterapia</li>
+                <img class="img-derma" src="Imagens/img/images/dermatologia_1.png">
+                <li class="derma">Dermatologia</li>
+                <img class="img-ofta" src="Imagens/img/images/prescricao_de_oculos_1.png">
+                <li class="ofta">Oftamologia</li>
+                <img class="img-vacina" src="Imagens/img/images/protecao_1.png">
+                <li class="vacina">Vacina</li>
+                <img class="img-neuro" src="Imagens/img/images/neuronio_1.png">
+                <li class="neuro">Neurologia</li>
+                <img class="img-pediatria" src="Imagens/img/images/pediatria_1.png">
+                <li class="pediatria">Pediatria</li>
+                <img class="img-trauma" src="Imagens/img/images/osso_1.png">
+                <li class="trauma">traumatologia</li>
+            </ul>            
+        </article>
+   
+            <form action="https://formspree.io/f/xvodydvd" method="POST" class="form">
+    
+                <h1 class="text-center">Consulta Online</h1>
+                    <!-- Barra de progresso -->
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+                        
+                        <div
+                            class="progress-step progress-step-active"
+                            data-title="Dados"
+                        ></div>
+                        <div class="progress-step" data-title="Contato"></div>
+                        <div class="progress-step" data-title="Consulta"></div>
+                        <div class="progress-step" data-title="Agenda"></div>
+                    </div>
+    
+                    <!-- Passos -->
+                    <div class="form-step form-step-active">
+                        <div class="input-group">
+                            <label for="name">Nome e sobrenome</label>
+                            <input type="text" name="message" id="username" />
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Data de nascimento</label>
+                            <input type="date" name="message" id="dob" />
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="phone">Telefone</label>
+                            <input type="text" name="phone" id="phone" required placeholder="(XX) XXXXX-XXXX" />
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="_replyto" id="email" required placeholder="seuemail@dominio.com" />
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <a href="#" class="btn btn-next">Próximo</a>
+                        </div>
+                   
 
-            <h1 class="titulo-agendamento">Agendamento Online:</h1>
-
-            <div class="informações-consulta">
-
-                <fieldset class="tipo-consulta">
-                    <legend>Qual o tipo de consulta?</legend>
-
-                    <select name="message">
-                        <option>Cardiologia</option>
-                        <option>Dermatologia</option>
-                        <option>Ginecologia</option>
-                        <option>Ortopedia</option>
-                        <option>Urologia</option>
-                        <option>Pediatria</option>
-                        <option>Psiquiatria</option>
-                    </select>
-                </fieldset>
-
-                <fieldset class="atendimento">
-                    <legend class="perido-atendimento">Qual horário de atendimento?</legend>
-                        <select name="message">
-                            <option>Manhã</option>
-                            <option>Tarde</option>
-                            <option>Noite</option>
-                        </select>
-                        <select class="horarios-atendimento" name="message"> 
-                            <div class="horarios-manha">
-                                <option>7:00</option>
-                                <option>8:00</option>
-                                <option>9:00</option>
-                                <option>10:00</option>
-                                <option>11:00</option>
-                                <option>12:00</option>
-                            </div>
-                            <div class="horarios-tarde">
-                                <option>13:00</option>
-                                <option>14:00</option>
-                                <option>15:00</option>
-                                <option>16:00</option>
-                                <option>17:00</option>
-                                <option>18:00</option>
-                            </div>
-                            <div class="horarios-noite">
-                                <option>19:00</option>
-                                <option>20:00</option>
-                                <option>21:00</option>
-                                <option>22:00</option>
-                            </div>
-                        </select>
-                </fieldset>
-
-                <label for="mensagem">Descreva os seus sintomas</label>
-                <textarea style="resize: none" cols="100" rows="10" name="message" class="sintomas" required></textarea>
-            </div>
-
-                <div class="contatos">
-                    <h2 class="titulo-contatos">Seus contatos:</h2>
-
-                    <label for="nome-sobrenome">Nome e Sobrenome</label>
-                    <input type="text" id="nome-sobrenome" name="name" required class="contato-nome">  
-
-                    <label for="e-mail">E-mail</label>
-                    <input type="email" id="e-mail" name="email" required placeholder="seuemail@dominio.com" class="contato-email">
-
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="phone" required placeholder="(XX) XXXXX-XXXX" class="contato-telefone"> 
-                </div>
-
-                <input type="submit" value="Enviar formulário" class="enviar-formulario">
-            </form>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <fieldset>
+                                <label>Tipo de consulta</label >
+                                <select class="tipo-consulta" name="message">
+                                    <option>Cardiologia</option>
+                                    <option>Dermatologia</option>
+                                    <option>Ginecologia</option>
+                                    <option>Ortopedia</option>
+                                    <option>Urologia</option>
+                                    <option>Pediatria</option>
+                                    <option>Psiquiatria</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem">Descreva os seus sintomas</label>
+                            <textarea style="resize: none" cols="45" rows="3" name="message" class="sintomas"></textarea>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <a href="#" class="btn btn-next">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="dob">Data da consulta</label>
+                            <input type="date" name="message" id="dob" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Horário da consulta</label>
+                            <input type="time" id="appt" name="message"
+                            min="08:00" max="17:00" required>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <input type="submit" value="Enviar formulário" class="btn" />
+                        </div>
+                    </div>
+                </form>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
    </header>
+<main> 
 
-   <main>
-    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
+        <div class="titulo-apresentação">Colaboradores</div>
+            <br> 
+            <div class="imagens">
+                <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
+                <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
+                <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
+                <a href="https://www.linkedin.com/in/kelwynkrawcyk/" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do Kelwyn"></a>
+                <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
+                <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
+            </div>
+            <div class="nomes-colaboradores">
+                <ul class="Colaboradores">
+                    <li class="colaboradores2">Bernardo Alves</li>
+                    <li class="colaboradores2"> &nbsp Kauã Silva</li>
+                    <li class="colaboradores2"> &nbsp &nbsp Igor Centofante</li>
+                    <li class="colaboradores2">Kelwyn Krawcyk</li>
+                    <li class="colaboradores2">Thauan de Albquerque</li>
+                    <li class="colaboradores2">Manuela Lima</li>
+                <ul>
+            </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+       
    </main>
 
    <footer class="rodapé">
         
    </footer>
 
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+<script src="index.js"></script>
 
    <script src="src/js/menu.js"></script>
+
    </body>
 
 </html>

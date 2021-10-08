@@ -1,6 +1,5 @@
-
 .Mmenu{
-    background-color: rgb(27, 80, 139);
+    background-color: rgb(120, 123, 126);
     width: 0em;
     height: 100%;
     position:fixed;
@@ -8,99 +7,28 @@
     left: 0;
     z-index: 1;
     overflow: hidden;
-    transition: width 0.3s ;
+    transition: width 0.3s;
 }
-
 .menu{
     display: block;
     color: cornsilk;
+    text-align: center;
     padding: 30px;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
+    border-bottom: solid;
     color: black;
-    float: left;
-}
-
-/*CSS Formulário*/
-
-.agendamento-online{
-    display: block;
-    margin: 0 0 5px;
-    padding: 20px 0px 5px;
-    width: 30%;
-}
-h1{
-    font-size: 15;
-    font-style: bold;
-}
-fieldset {
-    width: 30%;
-}
-fieldset option{
-    text-align: center;
-    width: 15%;
-}
-textarea{   
-    width: 31.8%;
-    border-radius: 3px;
-}
-form label{
-    display: block;
-}
-form input{
-    width: 20%;
-    border-radius: 5px;
-}
-.enviar-formulario{
-    display: block;
-    margin: 10px 0px 10px 0px;
-    font-size: 20px;
-    width: 20%;
-    border-radius: 10px;
-}
-.enviar-formulario:hover {
-    animation: balanço 0.7s alternate;
-    cursor: pointer;
 }
 .rodapé{
-  background-color: black;
-  height: 6em;
-  width: 100%;
-}
+    background-color: gray;
+    border: solid rgb(87, 81, 81);
+    height: 6em;
+  }
 
-@keyframes balanço{
-    0%{
-        transform: translateX(0%);
-    }
-    20%{
-        transform: translateX(-2%);
-    }
-    40%{
-        transform: translateX(2%);
-    }
-    60%{
-        transform: translateX(-2%);
-    }
-    80%{
-        transform: translateX(2%);
-    }
-    100%{
-        transform: translateX(0%);
-    }
-}
-
-@media screen and (max-width: 480px) { 
-    .informações-consulta, .enviar-formulario {
-        width: auto;
-    }
-    .atendimento{
-        width: auto;
-    }
-    .sintomas{
-        width: 50%;
-        height: 50px;
-    }
-    .contato-nome, .contato-email, .contato-telefone{
-        width: 45%;
-    }
-}
+  @media screen and(max-width:480) {
+      .rodapé{
+          width: 100%;
+      }
+  }
+  
