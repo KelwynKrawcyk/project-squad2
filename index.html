@@ -9,12 +9,20 @@
      <link rel="stylesheet" href="src/css/reset.css">
      <link rel="stylesheet" href="src/css/style.css">
      <link rel="stylesheet" href="src/css/cabeçalho.css">
+     <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/css/form.css">
      <link rel="stylesheet" href="src/js/script.js">
      <script src="src/js/form.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="src\css\crud\button.css">
+     <link rel="stylesheet" href="src\css\crud\main.css">
+     <link rel="stylesheet" href="src\css\crud\modal.css">
+     <link rel="stylesheet" href="src\css\crud\records.css">
+     <script src="src/js/index.js" defer></script>
+
+
     </head>
 
     <body>
@@ -28,8 +36,8 @@
         </nav>
         
         <div id="in-menu" class="Mmenu"> 
-            <a  class="menu" href="#" id="fecharM">&times Fechar</a>
-           <a  class="menu" href="#">Home</a>
+           <a class="menu" href="#" id="fecharM">&times Fechar</a>
+           <a class="menu" href="#">Home</a>
            <a class="menu" href="#">Sobre-nos</a>
            <a class="menu" href="#">Contatos</a>
            <a class="menu" href="#">Paceintes</a>
@@ -106,7 +114,7 @@
                         <div class="input-group">
                             <fieldset>
                                 <label>Tipo de consulta</label >
-                                <select class="tipo-consulta" name="message">
+                                <select id="tdpd" class="tipo-consulta" name="message">
                                     <option>Cardiologia</option>
                                     <option>Dermatologia</option>
                                     <option>Ginecologia</option>
@@ -138,7 +146,7 @@
                         </div>
                         <div class="btns-group">
                             <a href="#" class="btn btn-prev">Anterior</a>
-                            <input type="submit" value="Enviar formulário" class="btn" />
+                            <button onclick="novoPacienteFormulario()" type="submit" value="Enviar formulário" class="btn">Enviar formulário</button> 
                         </div>
                     </div>
                 </form>
@@ -153,80 +161,85 @@
             <br>
             <br>
         </div>
-   </header>
 
+   </header>
+   <!-- CRUD -->
+   <section class="container12"> 
+    <div class="cadastro"> 
+       <h1 class="header-title">Cadastro de Paciente</h1>
+    </div>
+    <div class="main-cadatro"> 
+       <button  class="button blue mobile" id="cadastrarCliente">Cadastrar Paciente</button>
+       <table class="records" id="tableClient">
+           <thead>
+               <tr>
+                   <th>Paciente</th>
+                   <th>Nascimento</th>
+                   <th>Consulta</th>
+                   <th>Horarios</th>
+                   <th>Ação</th>
+               </tr>
+           </thead>
+           <tbody></tbody>
+       </table>
+       <div class="modal" id="modal">
+           <div class="modal-content">
+               <header class="modal-header">
+                   <h2>Novo Cliente</h2>
+                   <span class="modal-close" id="modalClose">&#10006;</span>
+               </header>
+               <form class="modal-form" id="form">
+                   <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
+                   <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
+                   <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
+                   <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
+               </form>
+               <footer class="modal-footer">
+                   <button  class="button-green" id="salvar">Salvar</button>
+                   <button   class="button-blue" id="cancelar">Cancelar</button>
+               </footer>
+           </div>
+       </div>
+     </div>
+</section>
+
+<main> 
 
  
-   <div class="container-fluid">
-    <div class="row"></div>
-        <div class="col-md-12">
-            <h3>Pacientes
-                <small class="text-muted">Hospital Panaceia</small>
-            </h3>
-        </div>
-    </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-primary">Adicionar Pacientes</button>
-            </div>        
-        </div>
-        <div class="row" style="margin-top: 25px;">
-            <div class="col-md-12">
-                <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Paciente</th>
-                            <th scope="col">Idade</th>
-                            <th scope="col">consulta</th>
-                            <th scope="col">horario</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Nicolas</td>
-                            <td>22</td>
-                            <td>Cardiologia</td>
-                            <td>13:30</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Robson</td>
-                            <td>19</td>
-                            <td>Urologia</td>
-                            <td>19:58</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>renato</td>
-                            <td>33</td>
-                            <td>Psiquiatria</td>
-                            <td>18:40</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Jonas</td>
-                            <td>28</td>
-                            <td>Dermatologia</td>
-                            <td>17:00</td>
-                          </tr>
-                        </tbody>
-                  </table>
-            </div>
-        </div>
-</div>
-   <main>
-    
+
+    <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
+     <div class="titulo-apresentação">Colaboradores</div>
+     <br> 
+     <br>   
+     <br>   
+     <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
+     <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
+     <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
+     <a href="https://www.linkedin.com/in/kelwynkrawcyk/" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do "></a>
+     <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
+     <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
+
+                <ul class="Colaboradores"></ul>
+                    <li class="colaboradores2">Bernardo Alves</li>
+                    <li class="colaboradores2"> &nbsp Kauã Silva</li>
+                    <li class="colaboradores2"> &nbsp &nbsp Igor Centofante</li>
+                    <li class="colaboradores2">Kelwyn Krawcyk</li>
+                    <li class="colaboradores2">Thauan de Albquerque</li>
+                    <li class="colaboradores2">Manuela Lima</li>
+      <br>
+      <br> 
+      <br>
+      <br>
+      <br>                
+
+        
    </main>
 
-   <footer class="rodapé">
+   
+
+   <footer lass="rodapé">
         
    </footer>
-
-   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-<script src="index.js"></script>
 
    <script src="src/js/menu.js"></script>
 
