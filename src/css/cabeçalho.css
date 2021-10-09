@@ -9,14 +9,25 @@
 }
 
 .principal{
-    background-color: #363636;
-    border: solid rgb(87, 81, 81);
+    background-color:rgb(155, 194, 199);
+    border: solid rgb(155, 194, 199);
     display: inline-block;
     position: fixed;
     width: 100%;
     margin: 0 auto 500px auto; 
     z-index: 1;  
 }
+
+.logo { 
+	width:250px;
+	height:200px;
+	position:absolute;
+    margin-left:-800 ;
+	top:-45px;
+	background-image:url(Imagens\img\images\beleza_local_removebg_preview_1.png);
+    padding-left: 50px
+}
+
 
 .titulo{
     padding-top: 0.5em;
