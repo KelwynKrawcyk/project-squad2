@@ -6,42 +6,46 @@
      
      <title>Hospital</title>
 
-     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
-     <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
-     <link rel="preconnect" href="https://fonts.gstatic.com">
      <link rel="stylesheet" href="src/css/reset.css">
-     <link rel="stylesheet" href="src/css/style.css">
      <link rel="stylesheet" href="src/css/cabeçalho.css">
-     <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/css/form.css">
-     <link rel="stylesheet" href="src\css\crud\button.css">
-     <link rel="stylesheet" href="src\css\crud\main.css">
-     <link rel="stylesheet" href="src\css\crud\modal.css">
-     <link rel="stylesheet" href="src\css\crud\records.css">
+     <link rel="stylesheet" href="src/css/crud.css">
+     <link rel="stylesheet" href="src/css/style.css">
+     <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/js/script.js">
-     <script src="src/js/index.js" defer></script>
+     <link rel="stylesheet" href="src/css/consultas.css">
+     <link rel="stylesheet" href="src/css/crud/button.css">
+     <link rel="stylesheet" href="src/css/crud/main.css">
+     <link rel="stylesheet" href="src/css/crud/modal.css">
+     <link rel="stylesheet" href="src/css/crud/records.css">
+
      <script src="src/js/form.js" defer></script>
+     <script src="src/js/index.js" defer></script>
+     <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
 
-
+     
     </head>
 
     <body>
 
     <header>
-        <nav class="principal">
-            
-            <h1 class="titulo">Hospital Panaceia</h1>
-            <h2 class="subtitulo">-Desde 1947 salvando vidas-</h2>
-            <a href="#" class = "button-menu">&#9776Menu</a>
-        </nav>
-        
-        <div id="in-menu" class="Mmenu"> 
-           <a class="menu" href="#" id="fecharM">&times Fechar</a>
-           <a class="menu" href="#">Home</a>
-           <a class="menu" href="#">Sobre-nos</a>
-           <a class="menu" href="#">Contatos</a>
-           <a class="menu" href="#">Paceintes</a>
-           <a class="menu" href="#">Configuraçoes</a>
+
+        <div class="barra-de-navegação">
+            <nav class="principal">
+                
+                <h1 class="titulo">Hospital Panaceia</h1>
+                <div id="in-menu" class="Mmenu"> 
+                    <a  class="menu" href="#" id="fecharM">&times Fechar</a>
+                    <a  class="menu" href="#">Home</a>
+                    <a class="menu" href="#">Sobre-nos</a>
+                    <a class="menu" href="#">Contatos</a>
+                    <a class="menu" href="#">Pacientes</a>
+                    <a class="menu" href="#">Configuraçoes</a>
+                </div>
+                <a href="#" class = "button-menu">&#9776Menu</a>
+                <h2 class="subtitulo">-Desde 1947 salvando vidas-</h2>
+
+            </nav>
         </div>
 
         <br>
@@ -53,12 +57,41 @@
         <br>
         <br>
         <br>
-        <br>
-
-
-            <form action="https://formspree.io/f/xvodydvd" method="post" class="form">
+      
+        <article class="consultas">
+            <h1 class="consultas-titulo">Consultas: especialidades disponiveis</h1>
+            <ul class="bloco-consultas">
+                <img class="img-cardio" src="Imagens/img/images/cardiologia_1.png">
+                <li class="cardio">Cardiologia</li>
+                <img class="img-psico" src="Imagens/img/images/psicologo_1.png">
+                <li class="psico">Psicologia</li>
+                <img class="img-clinico" src="Imagens/img/images/historico_medico_1.png">
+                <li class="clinico">Clínico Geral</li>
+                <img class="img-odonto" src="Imagens/img/images/odontologia_1.png">
+                <li class="odonto">Odontologia</li>
+                <img class="img-nutri" src="Imagens/img/images/nutricao_1.png">
+                <li class="nutri">Nutrição</li>
+                <img class="img-fisioterapia" src="Imagens/img/images/fisioterapia_1.png">
+                <li class="fisioterapia">Fisioterapia</li>
+                <img class="img-derma" src="Imagens/img/images/dermatologia_1.png">
+                <li class="derma">Dermatologia</li>
+                <img class="img-ofta" src="Imagens/img/images/prescricao_de_oculos_1.png">
+                <li class="ofta">Oftamologia</li>
+                <img class="img-vacina" src="Imagens/img/images/protecao_1.png">
+                <li class="vacina">Vacina</li>
+                <img class="img-neuro" src="Imagens/img/images/neuronio_1.png">
+                <li class="neuro">Neurologia</li>
+                <img class="img-pediatria" src="Imagens/img/images/pediatria_1.png">
+                <li class="pediatria">Pediatria</li>
+                <img class="img-trauma" src="Imagens/img/images/osso_1.png">
+                <li class="trauma">traumatologia</li>
+            </ul>            
+        </article>
+   
+            <form action="https://formspree.io/f/xvodydvd" method="POST" class="form">
+    
                 <h1 class="text-center">Consulta Online</h1>
-                    <!--Barra de progresso-->
+                    <!-- Barra de progresso -->
                     <div class="progressbar">
                         <div class="progress" id="progress"></div>
                         
@@ -71,15 +104,15 @@
                         <div class="progress-step" data-title="Agenda"></div>
                     </div>
     
-                    <!--Passos-->
+                    <!-- Passos -->
                     <div class="form-step form-step-active">
                         <div class="input-group">
                             <label for="name">Nome e sobrenome</label>
-                            <input type="text" name="message" id="username" />
+                            <input type="text" name="message" id="username"/>
                         </div>
                         <div class="input-group">
                             <label for="dob">Data de nascimento</label>
-                            <input type="date" name="message" id="dob" />
+                            <input type="date" name="message" id="dob"/>
                         </div>
                         <div class="">
                             <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
@@ -92,12 +125,14 @@
                         </div>
                         <div class="input-group">
                             <label for="email">Email</label>
-                            <input type="email" name="_replyto" required placeholder="seuemail@dominio.com" />
+                            <input type="email" name="_replyto" id="email" required placeholder="seuemail@dominio.com" />
                         </div>
                         <div class="btns-group">
                             <a href="#" class="btn btn-prev">Anterior</a>
                             <a href="#" class="btn btn-next">Próximo</a>
                         </div>
+                   
+
                     </div>
                     <div class="form-step">
                         <div class="input-group">
@@ -130,7 +165,7 @@
                         </div>
                         <div class="input-group">
                             <label for="dob">Horário da consulta</label>
-                            <input type="time" id="appt" name="message"
+                            <input type="time" id="appt" name="message" 
                             min="08:00" max="17:00" required>
                         </div>
                         <div class="btns-group">
@@ -152,81 +187,81 @@
         </div>
 
    </header>
-   <!--qCRUD-->
-   <section class="container12"> 
-    <div class="cadastro"> 
-       <h1 class="header-title">Cadastro de Paciente</h1>
-    </div>
-    <div class="main-cadatro"> 
-       <button  class="button blue mobile" id="cadastrarCliente">Cadastrar Paciente</button>
-       <table class="records" id="tableClient">
-           <thead>
-               <tr>
-                   <th>Paciente</th>
-                   <th>Nascimento</th>
-                   <th>Consulta</th>
-                   <th>Horarios</th>
-                   <th>Ação</th>
-               </tr>
-           </thead>
-           <tbody></tbody>
-       </table>
-       <div class="modal" id="modal">
-           <div class="modal-content">
-               <header class="modal-header">
-                   <h2>Novo Cliente</h2>
-                   <span class="modal-close" id="modalClose">&#10006;</span>
-               </header>
-               <form class="modal-form" id="form">
-                   <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
-                   <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
-                   <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
-                   <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
-               </form>
-               <footer class="modal-footer">
-                   <button  class="button-green" id="salvar">Salvar</button>
-                   <button   class="button-blue" id="cancelar">Cancelar</button>
-               </footer>
-           </div>
-       </div>
-     </div>
-</section>
-
-<main> 
-
- 
+        <!--CRUD-->
+        <section class="container12"> 
+            <div class="cadastro"> 
+            <h1 class="header-title">Cadastro de Paciente</h1>
+            </div>
+            <div class="main-cadatro"> 
+            <button  class="button blue mobile" id="cadastrarCliente">Cadastrar Paciente</button>
+            <table class="records" id="tableClient">
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Nascimento</th>
+                        <th>Consulta</th>
+                        <th>Horarios</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Cliente</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form class="modal-form" id="form">
+                        <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
+                        <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
+                        <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
+                        <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button  class="button-green" id="salvar">Salvar</button>
+                        <button   class="button-blue" id="cancelar">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
+            </div>
+        </section>
 
     <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
-     <div class="titulo-apresentação">Colaboradores</div>
-     <br> 
-     <br>   
-     <br>   
-     <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
-     <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
-     <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
-     <a href="https://www.linkedin.com/in/kelwynkrawcyk/" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do "></a>
-     <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
-     <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
-
-                <ul class="Colaboradores"></ul>
+        <div class="titulo-apresentação">Colaboradores</div>
+            <br> 
+            <div class="imagens">
+                <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
+                <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
+                <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
+                <a href="https://www.linkedin.com/in/kelwynkrawcyk/" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do Kelwyn"></a>
+                <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
+                <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
+            </div>
+            <div class="nomes-colaboradores">
+                <ul class="Colaboradores">
                     <li class="colaboradores2">Bernardo Alves</li>
                     <li class="colaboradores2"> &nbsp Kauã Silva</li>
                     <li class="colaboradores2"> &nbsp &nbsp Igor Centofante</li>
                     <li class="colaboradores2">Kelwyn Krawcyk</li>
                     <li class="colaboradores2">Thauan de Albquerque</li>
                     <li class="colaboradores2">Manuela Lima</li>
-      <br>
-      <br> 
-      <br>
-      <br>
-      <br>                
+                <ul>
+            </div>
+    </div>
 
-        
+    <br>
+    <br>
+    <br>
+    <br>
+       
    </main>
 
-   
+   <footer class="rodapé">
+        
+   </footer>
 
-   <footer lass="rodapé"></footer>
+<script src="index.js"></script>
 
    <script src="src/js/menu.js"></script>
 

@@ -1,0 +1,168 @@
+.consultas{
+    background-color: rgb(155, 194, 199);
+    border: solid rgb(139, 148, 136);
+    padding: 1em;
+    border-radius: 1.3em;
+    float: right;
+    margin-right: 1em;
+}
+
+.consultas-titulo{
+    padding: 1em 1em 1em 1em;
+    border: solid rgb(139, 148, 136);
+    border-radius: 0.5em;
+    background-color: gray;
+}
+
+.bloco-consultas{
+   font-weight: bold;
+}
+
+.img-cardio{
+    width: 4em;
+  position: absolute;
+    margin: 1em 0em 0em 0em;
+}
+
+.img-odonto{
+    width: 4em;
+    display: inline-block;
+    position:absolute;
+}
+
+.img-derma{
+    width: 4em;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0em;
+}
+
+.img-neuro{
+    width: 4em;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0em;
+}
+
+.img-psico{
+    width: 4em;
+    position: absolute;
+    margin:0em 0em 0em 16em
+}
+
+.img-nutri{
+    width: 4em;
+    position: absolute;
+    margin:0em 0em 0em 16em
+}
+
+.img-ofta{
+    width: 4em;
+    position: absolute;
+    margin: 0em 0em 0em 16em;
+}
+
+.img-pediatria{
+    width: 4em;
+    position: absolute;
+    margin-left: 16em;
+}
+
+.img-clinico{
+    width: 4em;
+   float: right;
+   margin-left: 1em;
+}
+
+.img-fisioterapia{
+    width: 4em;
+    float: right;
+}
+
+.img-vacina{
+    width: 4em;
+    float: right;
+}
+
+.img-trauma{
+    width: 4em;
+    float: right;
+}
+
+.cardio{
+   padding: 1em 0em 0em 4em; 
+}
+
+.odonto{
+    margin: 0em 0em 3em 5em;
+    clear: left;
+}
+
+.derma{
+    margin: 0em 0em 3em 5em;
+    clear: left;
+}
+
+.neuro{
+    margin: 0em 0em 3em 5em;
+    clear: left;
+} 
+
+.psico{
+    margin: 0em 0em 0em 2em;
+    text-align: center;
+}
+
+.nutri{
+    margin: 0em 0em 0em 2em;
+    text-align: center;
+}
+
+.ofta{
+    margin: 0em 0em 0em 2em;
+    text-align: center;
+}
+
+.pediatria{
+    margin: 0em 0em 0em 1em;
+    text-align: center;
+}
+
+.clinico{
+    margin: 0em 0em 6em 7em;
+    text-align: right;
+}
+
+.fisioterapia{
+    margin: 0em 0em 6em 7em;
+    text-align: right;
+}
+
+.vacina{
+    margin: 0em 0em 3em 7em;
+    text-align: right;
+}
+
+.trauma{
+    margin: 0em 0em 3em 7em;
+    text-align: right;
+}
+
+@media screen and (max-width: 480px){
+    .consultas,.consultas-titulo, .cardio, .odonto, .derma,.neuro, .psico,.nutri,.ofta, .pediatria, .clinico, .fisioterapia, .vacina,.trauma{
+        width:auto;
+        clear: right;
+    }
+
+    .img-cardio, .img-odonto,.img-derma,.img-neuro,.img-clinico, .img-fisioterapia, .img-vacina, .img-trauma{
+        width: 2em;
+        
+       float: left;
+       margin-bottom: 4em;
+    }
+    .img-psico, .img-nutri,.img-ofta, .img-pediatria{
+        width: 2em;
+        margin-left: 2em;
+
+    }
+}
