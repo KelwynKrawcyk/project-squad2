@@ -14,7 +14,13 @@
      <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/js/script.js">
      <link rel="stylesheet" href="src/css/consultas.css">
+     <link rel="stylesheet" href="src/crud/button.css">
+     <link rel="stylesheet" href="src/css/crud/main.css">
+     <link rel="stylesheet" href="src/css/crud/modal.css">
+     <link rel="stylesheet" href="src/css/crud/records.css">
+
      <script src="src/js/form.js" defer></script>
+     <script src="src/js/index.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
      
     </head>
@@ -101,11 +107,11 @@
                     <div class="form-step form-step-active">
                         <div class="input-group">
                             <label for="name">Nome e sobrenome</label>
-                            <input type="text" name="message" id="username" />
+                            <input type="text" name="message" id="username"/>
                         </div>
                         <div class="input-group">
                             <label for="dob">Data de nascimento</label>
-                            <input type="date" name="message" id="dob" />
+                            <input type="date" name="message" id="dob"/>
                         </div>
                         <div class="">
                             <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
@@ -131,7 +137,7 @@
                         <div class="input-group">
                             <fieldset>
                                 <label>Tipo de consulta</label >
-                                <select class="tipo-consulta" name="message">
+                                <select id="tdpd" class="tipo-consulta" name="message">
                                     <option>Cardiologia</option>
                                     <option>Dermatologia</option>
                                     <option>Ginecologia</option>
@@ -158,12 +164,12 @@
                         </div>
                         <div class="input-group">
                             <label for="dob">Horário da consulta</label>
-                            <input type="time" id="appt" name="message"
+                            <input type="time" id="appt" name="message" 
                             min="08:00" max="17:00" required>
                         </div>
                         <div class="btns-group">
                             <a href="#" class="btn btn-prev">Anterior</a>
-                            <input type="submit" value="Enviar formulário" class="btn" />
+                            <button onclick="novoPacienteFormulario()" type="submit" value="Enviar formulário" class="btn">Enviar formulário</button> 
                         </div>
                     </div>
                 </form>
@@ -172,6 +178,47 @@
             <br>
             <br>
         </div>
+
+   </header>
+        <!--CRUD-->
+        <section class="container12"> 
+            <div class="cadastro"> 
+            <h1 class="header-title">Cadastro de Paciente</h1>
+            </div>
+            <div class="main-cadatro"> 
+            <button  class="button blue mobile" id="cadastrarCliente">Cadastrar Paciente</button>
+            <table class="records" id="tableClient">
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Nascimento</th>
+                        <th>Consulta</th>
+                        <th>Horarios</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Cliente</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form class="modal-form" id="form">
+                        <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
+                        <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
+                        <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
+                        <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button  class="button-green" id="salvar">Salvar</button>
+                        <button   class="button-blue" id="cancelar">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
+            </div>
+        </section>
    </header>
 <main> 
 
@@ -214,8 +261,6 @@
         
    </footer>
 
-   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 
    <script src="src/js/menu.js"></script>
