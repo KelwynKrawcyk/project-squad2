@@ -1,5 +1,5 @@
 .Mmenu{
-    background-color: rgb(120, 123, 126);
+    background-color: #363636;
     width: 0em;
     height: 100%;
     position:fixed;
@@ -11,14 +11,14 @@
 }
 .menu{
     display: block;
-    color: cornsilk;
+    color: white;
     text-align: center;
     padding: 30px;
+    left: 5%;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 25px;
     border-bottom: solid;
-    color: black;
 }
 .rodapé{
     background-color: gray;
@@ -31,4 +31,10 @@
           width: 100%;
       }
   }
-  
+
+  @media screen and (max-width: 480px) { 
+    .rodapé{
+        width: 150%;
+        height: 5em;
+    }
+}
