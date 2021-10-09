@@ -13,10 +13,16 @@
      <link rel="stylesheet" href="src/css/style.css">
      <link rel="stylesheet" href="src/css/colaboradores.css">
      <link rel="stylesheet" href="src/js/script.js">
+     <link rel="stylesheet" href="src/css/consultas.css">
+     <link rel="stylesheet" href="src/css/crud/button.css">
+     <link rel="stylesheet" href="src/css/crud/main.css">
+     <link rel="stylesheet" href="src/css/crud/modal.css">
+     <link rel="stylesheet" href="src/css/crud/records.css">
+
      <script src="src/js/form.js" defer></script>
+     <script src="src/js/index.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+     
     </head>
 
     <body>
@@ -49,11 +55,38 @@
         <br>
         <br>
         <br>
-        
-            <form action="https://api.staticforms.xyz/submit" method="post" class="form">
-                <input type="hidden" name="accessKey" value="3059cd06-7470-4302-a739-2af1fb530ff5"> 
-                <input type="hidden" name="subject" value="Nova consulta" />
-                <input type="hidden" name="redirectTo" value="exemplo.">
+      
+        <article class="consultas">
+            <h1 class="consultas-titulo">Consultas: especialidades disponiveis</h1>
+            <ul class="bloco-consultas">
+                <img class="img-cardio" src="Imagens/img/images/cardiologia_1.png">
+                <li class="cardio">Cardiologia</li>
+                <img class="img-psico" src="Imagens/img/images/psicologo_1.png">
+                <li class="psico">Psicologia</li>
+                <img class="img-clinico" src="Imagens/img/images/historico_medico_1.png">
+                <li class="clinico">Clínico Geral</li>
+                <img class="img-odonto" src="Imagens/img/images/odontologia_1.png">
+                <li class="odonto">Odontologia</li>
+                <img class="img-nutri" src="Imagens/img/images/nutricao_1.png">
+                <li class="nutri">Nutrição</li>
+                <img class="img-fisioterapia" src="Imagens/img/images/fisioterapia_1.png">
+                <li class="fisioterapia">Fisioterapia</li>
+                <img class="img-derma" src="Imagens/img/images/dermatologia_1.png">
+                <li class="derma">Dermatologia</li>
+                <img class="img-ofta" src="Imagens/img/images/prescricao_de_oculos_1.png">
+                <li class="ofta">Oftamologia</li>
+                <img class="img-vacina" src="Imagens/img/images/protecao_1.png">
+                <li class="vacina">Vacina</li>
+                <img class="img-neuro" src="Imagens/img/images/neuronio_1.png">
+                <li class="neuro">Neurologia</li>
+                <img class="img-pediatria" src="Imagens/img/images/pediatria_1.png">
+                <li class="pediatria">Pediatria</li>
+                <img class="img-trauma" src="Imagens/img/images/osso_1.png">
+                <li class="trauma">traumatologia</li>
+            </ul>            
+        </article>
+   
+            <form action="https://formspree.io/f/xvodydvd" method="POST" class="form">
     
                 <h1 class="text-center">Consulta Online</h1>
                     <!-- Barra de progresso -->
@@ -73,11 +106,11 @@
                     <div class="form-step form-step-active">
                         <div class="input-group">
                             <label for="name">Nome e sobrenome</label>
-                            <input type="text" name="name" id="username" />
+                            <input type="text" name="message" id="username"/>
                         </div>
                         <div class="input-group">
                             <label for="dob">Data de nascimento</label>
-                            <input type="date" name="message" id="dob" />
+                            <input type="date" name="message" id="dob"/>
                         </div>
                         <div class="">
                             <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
@@ -90,18 +123,20 @@
                         </div>
                         <div class="input-group">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" required placeholder="seuemail@dominio.com" />
+                            <input type="email" name="_replyto" id="email" required placeholder="seuemail@dominio.com" />
                         </div>
                         <div class="btns-group">
                             <a href="#" class="btn btn-prev">Anterior</a>
                             <a href="#" class="btn btn-next">Próximo</a>
                         </div>
+                   
+
                     </div>
                     <div class="form-step">
                         <div class="input-group">
                             <fieldset>
                                 <label>Tipo de consulta</label >
-                                <select class="tipo-consulta" name="message">
+                                <select id="tdpd" class="tipo-consulta" name="message">
                                     <option>Cardiologia</option>
                                     <option>Dermatologia</option>
                                     <option>Ginecologia</option>
@@ -128,12 +163,12 @@
                         </div>
                         <div class="input-group">
                             <label for="dob">Horário da consulta</label>
-                            <input type="time" id="appt" name="message"
+                            <input type="time" id="appt" name="message" 
                             min="08:00" max="17:00" required>
                         </div>
                         <div class="btns-group">
                             <a href="#" class="btn btn-prev">Anterior</a>
-                            <input type="submit" value="Enviar formulário" class="btn" />
+                            <button onclick="novoPacienteFormulario()" type="submit" value="Enviar formulário" class="btn">Enviar formulário</button> 
                         </div>
                     </div>
                 </form>
@@ -141,75 +176,49 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
+
    </header>
- 
-   <div class="crud">
-        <div class="container-fluid">
-            <div class="row"></div>
-                <div class="col-md-12">
-                    <h3>Pacientes
-                        <small class="text-muted">Hospital Panaceia</small>
-                    </h3>
-                </div>
-        </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button type="button" class="btn btn-primary">Adicionar Pacientes</button>
-                </div>        
+        <!--CRUD-->
+        <section class="container12"> 
+            <div class="cadastro"> 
+            <h1 class="header-title">Cadastro de Paciente</h1>
             </div>
-                <div class="row" style="margin-top: 25px;">
-                    <div class="col-md-12">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Paciente</th>
-                                    <th scope="col">Idade</th>
-                                    <th scope="col">consulta</th>
-                                    <th scope="col">horario</th>
-                                </tr>
-                            </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Nicolas</td>
-                                    <td>22</td>
-                                    <td>Cardiologia</td>
-                                    <td>13:30</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Robson</td>
-                                    <td>19</td>
-                                    <td>Urologia</td>
-                                    <td>19:58</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>renato</td>
-                                    <td>33</td>
-                                    <td>Psiquiatria</td>
-                                    <td>18:40</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Jonas</td>
-                                    <td>28</td>
-                                    <td>Dermatologia</td>
-                                    <td>17:00</td>
-                                </tr>
-                                </tbody>
-                        </table>
-                    </div>
+            <div class="main-cadatro"> 
+            <button  class="button blue mobile" id="cadastrarCliente">Cadastrar Paciente</button>
+            <table class="records" id="tableClient">
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Nascimento</th>
+                        <th>Consulta</th>
+                        <th>Horarios</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2>Novo Cliente</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form class="modal-form" id="form">
+                        <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
+                        <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
+                        <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
+                        <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button  class="button-green" id="salvar">Salvar</button>
+                        <button   class="button-blue" id="cancelar">Cancelar</button>
+                    </footer>
                 </div>
-    </div>
+            </div>
+            </div>
+        </section>
+   </header>
 <main> 
 
     <br>
@@ -251,8 +260,6 @@
         
    </footer>
 
-   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 
    <script src="src/js/menu.js"></script>

@@ -7,7 +7,7 @@
     left: 0;
     z-index: 1;
     overflow: hidden;
-    transition: width 0.3s ;
+    transition: width 0.3s;
 }
 .menu{
     display: block;
@@ -21,9 +21,15 @@
     border-bottom: solid;
 }
 .rodapé{
-    background-color: black;
+    background-color: gray;
+    border: solid rgb(87, 81, 81);
     height: 6em;
-    width: 100%;
+  }
+
+  @media screen and(max-width:480) {
+      .rodapé{
+          width: 100%;
+      }
   }
 
   @media screen and (max-width: 480px) { 

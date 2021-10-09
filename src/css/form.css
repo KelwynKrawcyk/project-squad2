@@ -87,10 +87,11 @@ body {
   /* Formulário */
   .form {
     width: clamp(320px, 30%, 430px);
-    margin-left: 15%;
+    margin: 0em 0em 0em 3em;
     border: 1px solid #ccc;
     border-radius: 0.35rem;
-    padding: 1.5rem;
+    padding: 1.5em;
+    float: left;
   }
   .form-step {
     display: none;
