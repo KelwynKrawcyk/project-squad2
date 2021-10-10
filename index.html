@@ -18,7 +18,7 @@
      <link rel="stylesheet" href="src/css/crud/main.css">
      <link rel="stylesheet" href="src/css/crud/modal.css">
      <link rel="stylesheet" href="src/css/crud/records.css">
-
+     <script src="src/js/script.js" defer></script>   
      <script src="src/js/form.js" defer></script>
      <script src="src/js/index.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
@@ -219,7 +219,7 @@
             </div>
         </section>
    </header>
-<main> 
+   <main> 
 
     <br>
     <br>
@@ -229,31 +229,50 @@
     <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
         <div class="titulo-apresentação">Colaboradores</div>
             <br> 
-            <div class="imagens">
-                <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/" target="_blank"><img class="Bernardo" src="Imagens\img\Bernardo.jpeg"  alt="Rosto do Bernardo"></a>
-                <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/" target="_blank"><img class="Kauã" src="Imagens\img\Kauã.jpeg" alt="Rosto do Kauã"></a>
-                <a href="https://www.linkedin.com/in/ígor-centofante/" target="_blank"><img class="Ígor" src="Imagens\img\Ígor.png" alt="Rosto do Ígor"></a>
-                <a href="https://www.linkedin.com/in/kelwynkrawcyk/" target="_blank"><img class="Kelwyn" src="Imagens\img\kelwyn.jpeg" alt="Rosto do Kelwyn"></a>
-                <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/" target="_blank"><img class="Thauan" src="Imagens\img\thaua.jpeg" alt="Rosto do Thauan"></a>
-                <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/" target="_blank"><img class="Manu" &nbsp src="Imagens\img\manu.jpeg" alt="Rosto da Manu"></a>
-            </div>
+           
+                <div class="max-width">
+                    <div class="imageContainer">
+                        <img src="Imagens/img/Bernardo.jpeg" alt="Selecione uma imagem" id="bernardoImg">
+                        <img src="Imagens/img/Kauã.jpeg" alt="Selecione uma imagem" id="kauaImg">
+                        <img src="Imagens/img/Ígor.png" alt="Selecione uma imagem" id="igorImg">
+                        <img src="Imagens/img/kelwyn.jpeg" alt="Selecione uma imagem" id="kelwynImg">
+                        <img src="Imagens/img/thauan.jpeg" alt="Selecione uma imagem" id="thauanImg">
+                        <img src="Imagens/img/manu.jpeg" alt="Selecione uma imagem" id="manuImg">
+                        
+                    </div>
+                </div>
+            
+                <input type="file" id="imageBernardo" name="fImage" accept="image/*">
+                <input type="file" id="imageKaua" name="fImage" accept="image/*">
+                <input type="file" id="imageIgor" name="fImage" accept="image/*">
+                <input type="file" id="imageKelwyn" name="fImage" accept="image/*">
+                <input type="file" id="imageThauan" name="fImage" accept="image/*">
+                <input type="file" id="imageManu" name="fImage" accept="image/*">
+                                           
+                              
+            
+            
+            
             <div class="nomes-colaboradores">
                 <ul class="Colaboradores">
-                    <li class="colaboradores2">Bernardo Alves</li>
-                    <li class="colaboradores2"> &nbsp Kauã Silva</li>
-                    <li class="colaboradores2"> &nbsp &nbsp Igor Centofante</li>
-                    <li class="colaboradores2">Kelwyn Krawcyk</li>
-                    <li class="colaboradores2">Thauan de Albquerque</li>
-                    <li class="colaboradores2">Manuela Lima</li>
+                   <div class="caixas">
+                    <input type="text" id="caixa1" value="Bernardo Alves">
+                    <input type="text" id="caixa2" value="Kauã Silva">
+                    <input type="text" id="caixa3" value="Ígor Centofante">
+                    <input type="text" id="caixa4" value="Kelwyn Krawcyk">
+                    <input type="text" id="caixa5" value="Thauan de Albquerque">
+                    <input type="text" id="caixa6" value="Manuela Lima">
+                 
+                </div> 
                 <ul>
             </div>
     </div>
 
     <br>
     <br>
-    <br>
-    <br>
-       
+    <br> 
+
+
    </main>
 
    <footer class="rodapé">
