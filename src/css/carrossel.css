@@ -1,0 +1,35 @@
+.carrossel {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 30px 15%;
+    min-height: 45vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #00000054;
+    overflow: hidden;
+    height: 20px;
+    width: 70%;
+  }
+  
+  .container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+  }
+  
+  .carrossel img {
+    object-fit: cover;
+    width: 70vw; /* mudar no carousel.js também */
+  }
+  
+  @media (max-width: 1100px) {
+    .carrossel {
+      display: block;
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+      min-height: 0;
+    }
+  }
+  
