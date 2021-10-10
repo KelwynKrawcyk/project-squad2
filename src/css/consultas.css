@@ -1,6 +1,6 @@
 .consultas{
     background-color: rgb(155, 194, 199);
-    border: solid rgb(139, 148, 136);
+    border: solid rgb(87, 81, 81);
     padding: 1em;
     border-radius: 1.3em;
     float: right;
@@ -9,9 +9,9 @@
 
 .consultas-titulo{
     padding: 1em 1em 1em 1em;
-    border: solid rgb(139, 148, 136);
+    border: solid rgba(97.00000181794167, 136.00000709295273, 135.00000715255737, 1);
     border-radius: 0.5em;
-    background-color: gray;
+    background-color:rgba(97.00000181794167, 136.00000709295273, 135.00000715255737, 1);
 }
 
 .bloco-consultas{
