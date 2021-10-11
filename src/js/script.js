@@ -4,7 +4,9 @@
             let fileBernardo = document.getElementById('imageBernardo');
 
                     photoBernardo.addEventListener('click', () => {
-                    fileBernardo.click();
+                        var confirmar  = confirm("Você quer mesmo remover a imagem")
+                        if(confirmar == true){
+                    fileBernardo.click();}
                     });
 
                     fileBernardo.addEventListener('change', () => {
@@ -28,7 +30,9 @@
             let fileKaua = document.getElementById('imageKaua');
 
                     photoKaua.addEventListener('click', () => {
-                    fileKaua.click();
+                       var confirmar  = confirm("Você quer mesmo remover a imagem")
+                        if(confirmar == true){
+                    fileKaua.click();}
                         });
 
                     fileKaua.addEventListener('change', () => {
@@ -52,7 +56,9 @@
             let fileIgor = document.getElementById('imageIgor');
 
                     photoIgor.addEventListener('click', () => {
-                        fileIgor.click();
+                        var confirmar  = confirm("Você quer mesmo remover a imagem")
+                        if(confirmar == true){
+                        fileIgor.click();}
                     });
 
                     fileIgor.addEventListener('change', () => {
@@ -75,7 +81,9 @@
             let fileKelwyn = document.getElementById('imageKelwyn');
         
                     photoKelwyn.addEventListener('click', () => {
-                        fileKelwyn.click();
+                        var confirmar  = confirm("Você quer mesmo remover a imagem")
+                        if(confirmar == true){
+                        fileKelwyn.click();}
                      });
         
                      fileKelwyn.addEventListener('change', () => {
@@ -97,7 +105,9 @@
             let fileThauan = document.getElementById('imageThauan');
         
                         photoThauan.addEventListener('click', () => {
-                            fileThauan.click();
+                            var confirmar  = confirm("Você quer mesmo remover a imagem")
+                        if(confirmar == true){
+                            fileThauan.click();}
                      });
         
                      fileThauan.addEventListener('change', () => {
@@ -119,7 +129,9 @@
                     let fileManu = document.getElementById('imageManu');
                 
                                 photoManu.addEventListener('click', () => {
-                                    fileManu.click();
+                                    var confirmar  = confirm("Você quer mesmo remover a imagem")
+                                  if(confirmar == true){
+                                    fileManu.click();}
                              });
                 
                              fileManu.addEventListener('change', () => {
