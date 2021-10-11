@@ -20,6 +20,7 @@
      <link rel="stylesheet" href="src/css/carrossel.css">
      <link rel="stylesheet" href="src/css/sobre-nos.css">
      <link rel="stylesheet" href="src/css/carrossel-sobre.css">
+     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
      <script src="src/js/carrossel.js" defer></script>
      <script src="src/js/form.js" defer></script>
@@ -28,6 +29,7 @@
      <script src="src/js/script.js" defer></script> 
      <script src="src/js/menu.js" defer></script>
      <script src="src\js\mascaraTelefone.js" defer></script>
+     <script src="src/js/jquery.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
      
     </head>
@@ -41,15 +43,60 @@
                     <h1 class="titulo">Hospital Panaceia</h1>
                     <img class="imagemqueeuodeio" src=Imagens\img\logooficial.png>
                     <h2 class="subtitulo">Desde 1947 salvando vidas</h2>
-                    <div id="in-menu" class="Mmenu"> 
-                        <a class="menu" href="#" id="fecharM">&times Fechar</a>
-                        <a class="menu" href="#">Home</a>
-                        <a class="menu" href="#">Sobre-nos</a>
-                        <a class="menu" href="#">Contribuidores</a>
-                        <a class="menu" href="#">Pacientes</a>
-                        <a class="menu" href="#">Configuraçoes</a>
-                    </div>
-                    <a href="#" class = "button-menu">&#9776Menu</a>
+                       <div class="sidebar">
+                        <div class="logo-details">
+                            <i name='menu'></i>
+                            <div class="logo_name">Menu</div>
+                            <i class='bx bx-menu' id="btn" ></i>
+                        </div>
+                        <ul class="nav-list">
+                          <li>
+                            <a href="#img">
+                              <i class='bx bx-grid-alt'></i>
+                              <span class="links_name">Fotos sobre-nos</span>
+                            </a>
+                             <span class="tooltip">Fotos sobre-nos</span>
+                          </li>
+                          <li>
+                           <a href="#sobre-nos">
+                            <i class='bx bxs-message-alt-add'></i>
+                             <span class="links_name">Sobre-nos</span>
+                           </a>
+                           <span class="tooltip">Sobre-nos</span>
+                         </li>
+                         <li>
+                           <a href="#Consultas">
+                             <i class='bx bx-chat' ></i>
+                             <span class="links_name">Agendamento Online</span>
+                           </a>
+                           <span class="tooltip">Agendamento Online</span>
+                         </li>
+                         <li>
+                           <a href="#consultas-online">
+                             <i class='bx bx-pie-chart-alt-2' ></i>
+                             <span class="links_name">Suas consultas</span>
+                           </a>
+                           <span class="tooltip">Suas consultas</span>
+                         </li>
+                         <li>
+                           <a href="#Colaboradores">
+                            <i class='bx bx-user' ></i>
+                             <span class="links_name">Colaboradores</span>
+                           </a>
+                           <span class="tooltip">Colaboradores</span>
+                         </li>
+                         <li>
+                           <a href="#">
+                            <i class='bx bx-cog'></i>
+                             <span class="links_name">Configurações</span>
+                           </a>
+                           <span class="tooltip">Configurações</span>
+                         </li>
+                        </ul>
+                      </div>
+                       
+
+
                     <h6 class="imagemqueeuodeio"></h6>         
                 </nav>
             </div>
@@ -86,7 +133,7 @@
 
         <section class="sobre-nos">
             <div class="sobre-nos-painel">
-                <h1 class= "sobre-nos-titulo">SOBRE NÓS</h1>
+                <h1 class= "sobre-nos-titulo" id="sobre-nos">SOBRE NÓS</h1>
                 <div class="sobre-nos-bg">
                     <h2 id = "editarSobre" class= "sobre-nos-sub">
                         Construído em  1947, o Hospital Panaceia tem como objetivo o conforto e segurança para seus pacientes.  Há 74 anos mantemos nosso lema sobre que a transformação é algo natural para todos. Sempre com muito conforto recebemos diversos pacientes não só do estado, mas também do país inteiro. Os melhores profissionais do país estão aqui. Venha logo marcar sua consulta.
@@ -102,7 +149,7 @@
         </section>
       
         <article class="consultas-disponiveis">
-            <h1 class="consultas-titulo">Consultas: especialidades disponiveis</h1>
+            <h1 class="consultas-titulo" id="Consultas">Consultas: especialidades disponiveis</h1>
             <ul class="bloco-consultas">
                 <img class="img-cardio" src="Imagens/img/images/cardiologia_1.png">
                 <li class="cardio">Cardiologia</li>
@@ -133,7 +180,7 @@
         
         <form action="https://formspree.io/f/mbjqbqpe" method="POST" class="form">
     
-                <h1 class="text-center">Consulta Online</h1>
+                <h1 class="text-center" id="consultas-online">Consulta Online</h1>
                     <!-- Barra de progresso -->
                     <div class="progressbar">
                         <div class="progress" id="progress"></div>
@@ -266,7 +313,7 @@
         <main> 
 
             <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
-                <div class="titulo-apresentação">Colaboradores</div>
+                <div class="titulo-apresentação" id="Colaboradores">Colaboradores</div>
 
                 
                         <div class="max-width">
