@@ -9,11 +9,13 @@
     height: 15.75rem;
     border-radius: 0.35rem;
 }
+
 .titulo-apresentação {
     margin-top: 2%;
     font-size: 1.563rem;
     text-align: center;
 }
+
 .colaboradores2 {
     margin-top: 2%;
     display: inline-block;
@@ -26,15 +28,17 @@
     box-sizing: border-box;
     border: none;
 }
+
 input[type='file'] {
     display: none;
 }
+
 .max-width {
     display: inline;
     max-width: 500px;
     width: 100%;
-    
 }
+
 #bernardoImg {
     margin-left: 4%;
     margin-top: 2%;
@@ -48,10 +52,12 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
 }
+
 #bernardoImg:hover{
     background-color: rgb(180, 180, 180);
     border: 5px solid #111;
 }
+
 #kauaImg {
     margin-top: 2%;
     margin-right: 5%;
@@ -64,10 +70,12 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
 }
+
 #kauaImg:hover{
     background-color: rgb(180, 180, 180);
     border: 5px solid #111;
 }
+
 #igorImg {
     margin-top: 2%;
     margin-right: 5%;
@@ -81,10 +89,12 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
 }
+
 #igorImg:hover{
     background-color: rgb(180, 180, 180);
     border: 5px solid #111;
 }
+
 #kelwynImg {
     margin-top: 2%;
     margin-right: 6%;
@@ -98,10 +108,12 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
 }
+
 #kelwynImg:hover{
     background-color: rgb(180, 180, 180);
     border: 5px solid #111;
 }
+
 #thauanImg {
     margin-top: 2%;
     margin-right: 8%;
@@ -115,10 +127,12 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
 }
+
 #thauanImg:hover{
     background-color: rgb(180, 180, 180);
     border: 5px solid #111;
 }
+
 #manuImg {
     margin-top: 2%;
     margin-right: 0%;
@@ -131,13 +145,16 @@ input[type='file'] {
     cursor: pointer;
     transition: background .3s;
 }
+
 #manuImg:hover{
     background-color: rgb(180, 180, 180);
     border: 5px solid #111;
 }
+
 .inputColaboradores {
     float: left;
 }
+
 .caixaNomes {
     border: 0px solid #111;
     width: 145px;
@@ -154,7 +171,6 @@ input[type='file'] {
     margin-left: 4%;
     font-size: 18px;
     display: inline;
-
 }
 
 #caixa2 {
@@ -191,7 +207,6 @@ input[type='file'] {
     margin-left: 1%;
     font-size: 18px;
     display: inline;
-
 }
 
 #caixa6 {
@@ -201,8 +216,8 @@ input[type='file'] {
     margin-left: 2%;
     font-size: 18px;
     display: inline;
-
 }
+
 @media screen and (max-width: 480px) { 
     .caixa-colaboradores{
         text-align: center;
