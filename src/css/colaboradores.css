@@ -38,7 +38,7 @@ input[type='file'] {
 #bernardoImg {
     margin-left: 4%;
     margin-top: 2%;
-    margin-right: 3%;
+    margin-right: 7%;
     max-width: 100px;
     height: 100px;
     width:100%;
@@ -71,6 +71,7 @@ input[type='file'] {
 #igorImg {
     margin-top: 2%;
     margin-right: 5%;
+    margin-left: 3%;
     max-width: 100px;
     height: 100px;
     width:100%;
@@ -86,7 +87,8 @@ input[type='file'] {
 }
 #kelwynImg {
     margin-top: 2%;
-    margin-right: 8%;
+    margin-right: 6%;
+    margin-left: 3%;
     max-width: 100px;
     height: 100px;
     width:100%;
@@ -103,6 +105,7 @@ input[type='file'] {
 #thauanImg {
     margin-top: 2%;
     margin-right: 8%;
+    margin-left: 2%;
     max-width: 100px;
     height: 100px;
     width:100%;
@@ -118,7 +121,7 @@ input[type='file'] {
 }
 #manuImg {
     margin-top: 2%;
-    margin-right: 3%;
+    margin-right: 0%;
     max-width: 100px;
     height: 100px;
     width:100%;
@@ -142,45 +145,60 @@ input[type='file'] {
     margin-left: 2%;
     font-size: 18px;
     display: inline;
+}
+
+#caixa1 {
+    border: 0px solid #111;
+    width: 120px;
+    height: auto;
+    margin-left: 4%;
+    font-size: 18px;
+    display: inline;
 
 }
+
 #caixa2 {
     border: 0px solid #111;
     width: 120px;
     height: auto;
-    margin-left: 0%;
+    margin-left: 5%;
     font-size: 18px;
     display: inline;
-
 }
+
 #caixa3 {
     border: 0px solid #111;
     width: 150px;
     height: auto;
-    margin-left: 1%;
+    margin-left:  4%;
     font-size: 18px;
     display: inline;
-}#caixa4 {
+}
+
+#caixa4 {
     border: 0px solid #111;
     width: 160px;
     height: auto;
-    margin-left: 0%;
+    margin-left: 3%;
     font-size: 18px;
     display: inline;
-}#caixa5 {
+}
+
+#caixa5 {
     border: 0px solid #111;
     width: 210px;
     height: auto;
-    margin-left: 0%;
+    margin-left: 1%;
     font-size: 18px;
     display: inline;
 
 }
+
 #caixa6 {
     border: 0px solid #111;
     width: 135px;
     height: auto;
-    margin-left: 1%;
+    margin-left: 2%;
     font-size: 18px;
     display: inline;
 
