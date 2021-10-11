@@ -12,6 +12,7 @@
 	text-align:center;
 	padding: 20px;
 	display:inline-block;
+	padding-bottom: 30%;
 }
 .sobre-nos-titulo{
 	font-size:40px;
@@ -41,4 +42,9 @@
 	border-radius:30px;
 	margin-left: 5%;
 	margin-top: 2%;
+}
+@media(max-width:480px){
+    .sobre-nos-bg{
+		width:100%;
+	}
 }

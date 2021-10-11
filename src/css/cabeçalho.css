@@ -12,9 +12,8 @@
     background-color:rgb(155, 194, 199);
     border: solid rgb(155, 194, 199);
     display: inline-block;
-    /*position: fixed;*/
     width: 100%;
-    margin: 0 auto 500px auto; 
+    margin: 0 auto 150px auto;
     z-index: 1;  
 }
 
