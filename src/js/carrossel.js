@@ -15,6 +15,6 @@ function carrossel() {
   imgs.style.transform = `translatex(${-idx * 70}vw)`;
 }
 
-// esse 5000 é o tempo que a img vai ficar na tela
+// esse 3000 é o tempo em segundos que a img vai ficar na tela
 
-setInterval(carrossel, 5000);
+setInterval(carrossel, 3000);

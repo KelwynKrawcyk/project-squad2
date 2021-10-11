@@ -13,11 +13,13 @@ body {
     margin: 0;
     min-height: 100vh;
   }
+
   /* Configurações globais */
   label {
     display: block;
     margin-bottom: 0.5rem;
   }
+
   input {
     display: block;
     width: 100%;
@@ -25,6 +27,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 0.25rem;
   }
+
   .width-50 {
     width: 50%;
   }
@@ -32,6 +35,7 @@ body {
   .ml-auto {
     margin-left: auto;
   }
+
   .text-center {
     text-align: center;
   }
@@ -44,6 +48,7 @@ body {
     counter-reset: step;
     margin: 2rem 0 4rem;
   }
+
   .progressbar::before,
   .progress {
     content: "";
@@ -55,11 +60,13 @@ body {
     background-color: #dcdcdc;
     z-index: -1;
   }
+
   .progress {
     background-color: var(--primary-color);
     width: 0%;
     transition: 0.3s;
   }
+
   .progress-step {
     width: 2.1875rem;
     height: 2.1875rem;
@@ -69,10 +76,12 @@ body {
     justify-content: center;
     align-items: center;
   }
+  
   .progress-step::before {
     counter-increment: step;
     content: counter(step);
   }
+
   .progress-step::after {
     content: attr(data-title);
     position: absolute;
@@ -80,6 +89,7 @@ body {
     font-size: 0.85rem;
     color: #666;
   }
+
   .progress-step-active {
     background-color: var(--primary-color);
     color: #f3f3f3;
@@ -95,7 +105,6 @@ body {
     float: center;
     margin-bottom: 25%;
     display: flexbox;
-    
   }
   
   .form-step {
@@ -103,17 +112,21 @@ body {
     transform-origin: top;
     animation: animate 0.5s;
   }
+
   .form-step-active {
     display: block;
   }
+
   .input-group {
     margin: 2rem 0;
   }
+
   .tipo-consulta{
     padding: 10px;
     width: 97%;
     border-radius: 0.35rem;
   }
+
   .sintomas {
     border-radius: 0.35rem;
 }
@@ -135,6 +148,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+
   .btn {
     padding: 0.75rem;
     display: block;
@@ -146,6 +160,7 @@ body {
     cursor: pointer;
     transition: 0.3s;
   }
+  
   .btn:hover {
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
   }

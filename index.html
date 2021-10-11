@@ -34,62 +34,55 @@
 
     <body>
 
-    <header>
-        <div class="barra-de-navegação">
-            <nav class="principal">
-                
-                <h1 class="titulo">Hospital Panaceia</h1>
-                <img class="imagemqueeuodeio" src=Imagens\img\logooficial.png>
-                <h2 class="subtitulo">Desde 1947 salvando vidas</h2>
-                <div id="in-menu" class="Mmenu"> 
-                    <a class="menu" href="#" id="fecharM">&times Fechar</a>
-                    <a class="menu" href="#">Home</a>
-                    <a class="menu" href="#">Sobre-nos</a>
-                    <a class="menu" href="#">Contatos</a>
-                    <a class="menu" href="#">Pacientes</a>
-                    <a class="menu" href="#">Configuraçoes</a>
-                </div>
-                <a href="#" class = "button-menu">&#9776Menu</a>
-                
-                <h6 class="imagemqueeuodeio"></h6>
-               
-                        
-            </nav>
-    </header>
-        </div>
-    <section class="carrossel">
+        <header>
+            <div class="barra-de-navegação">
+                <nav class="principal">
+                    
+                    <h1 class="titulo">Hospital Panaceia</h1>
+                    <img class="imagemqueeuodeio" src=Imagens\img\logooficial.png>
+                    <h2 class="subtitulo">Desde 1947 salvando vidas</h2>
+                    <div id="in-menu" class="Mmenu"> 
+                        <a class="menu" href="#" id="fecharM">&times Fechar</a>
+                        <a class="menu" href="#">Home</a>
+                        <a class="menu" href="#">Sobre-nos</a>
+                        <a class="menu" href="#">Contribuidores</a>
+                        <a class="menu" href="#">Pacientes</a>
+                        <a class="menu" href="#">Configuraçoes</a>
+                    </div>
+                    <a href="#" class = "button-menu">&#9776Menu</a>
+                    <h6 class="imagemqueeuodeio"></h6>         
+                </nav>
+            </div>
+        </header>
+
+        <section class="carrossel">
             <div class="container" id="img">
-              <picture>
-                <source
-                  media="(max-width: 999px)"
-                  srcset="Imagens\img\Hospital-Israelita-Albert-Einstein-completa-50-anos-de-historia.jpg"
-                />
-                <img
-                  src="Imagens\img\Hospital-Israelita-Albert-Einstein-completa-50-anos-de-historia.jpg"
-                  alt="imagem bonita do hospital"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(max-width: 999px)"
-                  srcset="Imagens\img\imagem_2021-10-09_225325.png"
-                />
-                <img
-                  src="Imagens\img\imagem_2021-10-09_225325.png"
-                  alt="Hospital de longe"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(max-width: 999px)"
-                  srcset="Imagens\img\imagem_2021-10-09_221206.png"
-                />
-                <img src="Imagens\img\imagem_2021-10-09_221206.png" alt="Fachada do hospital" />
-              </picture>
+                <picture>
+                        <source
+                        media="(max-width: 999px)"
+                        srcset="Imagens\img\Hospital-Israelita-Albert-Einstein-completa-50-anos-de-historia.jpg"/>
+                        <img
+                        src="Imagens\img\Hospital-Israelita-Albert-Einstein-completa-50-anos-de-historia.jpg"
+                        alt="imagem bonita do hospital"/>
+                </picture>
+                <picture>
+                        <source
+                        media="(max-width: 999px)"
+                        srcset="Imagens\img\imagem_2021-10-09_225325.png"/>
+                        <img
+                        src="Imagens\img\imagem_2021-10-09_225325.png"
+                        alt="Hospital de longe"/>
+                </picture>
+                <picture>
+                        <source
+                        media="(max-width: 999px)"
+                        srcset="Imagens\img\imagem_2021-10-09_221206.png"/>
+                        <img src="Imagens\img\imagem_2021-10-09_221206.png" alt="Fachada do hospital"/>
+                </picture>
             </div>
         </section>
 
-                     <!-- Sobre nós -->
+        <!-- Sobre nós -->
 
         <section class="sobre-nos">
             <div class="sobre-nos-painel">
@@ -104,8 +97,7 @@
             <div class="sobre-nos-img">
                 <img
                 src="Imagens\img\Teto-realiza-projeto-mobiliario-do-Hospital-Albert-Einstein-de-Goiania-em-apenas-cinco-meses.jpg"
-                alt="recepção"
-                />
+                alt="recepção"/>
             </div>
         </section>
       
@@ -139,7 +131,7 @@
             </ul>            
         </article>
         
-            <form action="https://formspree.io/f/mbjqbqpe" method="POST" class="form">
+        <form action="https://formspree.io/f/mbjqbqpe" method="POST" class="form">
     
                 <h1 class="text-center">Consulta Online</h1>
                     <!-- Barra de progresso -->
@@ -148,8 +140,8 @@
                         
                         <div
                             class="progress-step progress-step-active"
-                            data-title="Dados"
-                        ></div>
+                            data-title="Dados">
+                        </div>
                         <div class="progress-step" data-title="Contato"></div>
                         <div class="progress-step" data-title="Consulta"></div>
                         <div class="progress-step" data-title="Agenda"></div>
@@ -164,7 +156,6 @@
                         <div class="input-group">
                             <label for="dob">Data de nascimento</label required>
                             <input type="date" name="message" id="dob"/>
-                            
                         </div>
                         <div class="">
                             <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
@@ -174,8 +165,7 @@
                         <div class="input-group">
                             <label for="phone">Telefone</label>
                             <input type="text" name="phone" id="phone" required placeholder="(XX) XXXXX-XXXX"
-                            minlength="9" maxlength="15"
-                            />
+                            minlength="9" maxlength="15"/>
                         </div>
                         <div class="input-group">
                             <label for="email">Email</label>
@@ -185,8 +175,6 @@
                             <a href="#" class="btn btn-prev">Anterior</a>
                             <a href="#" class="btn btn-next">Próximo</a>
                         </div>
-                   
-
                     </div>
                     <div class="form-step">
                         <div class="input-group">
@@ -205,8 +193,6 @@
                                     <option>Oftamologia</option>
                                     <option>fisioterapia</option>
                                     <option>Vacinação</option>
-                                    
-
                                 </select>
                             </fieldset>
                         </div>
@@ -234,7 +220,7 @@
                             <button onclick="novoPacienteFormulario()" type="submit" value="Enviar formulário" class="btn">Enviar formulário</button> 
                         </div>
                     </div>
-            </form>
+        </form>
 
    
         <!--CRUD-->
@@ -243,97 +229,93 @@
             <h1 class="header-title">Cadastro de Paciente</h1>
             </div>
             <div class="main-cadatro"> 
-            <button hidden class="button blue mobile" id="cadastrarCliente">Cadastro Paciente</button> <!--Sem isso, não funciona-->
-            <table class="records" id="tableClient">
-                <thead>
-                    <tr>
-                        <th>Paciente</th>
-                        <th>Nascimento</th>
-                        <th>Consulta</th>
-                        <th>Horarios</th>
-                        <th>Ação</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-            <div class="modal" id="modal">
-                <div class="modal-content">
-                    <header class="modal-header">
-                        <h2>Novo Cliente</h2>
-                        <span class="modal-close" id="modalClose">&#10006;</span>
-                    </header>
-                    <form class="modal-form" id="form">
-                        <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
-                        <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
-                        <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
-                        <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
-                    </form>
-                    <footer class="modal-footer">
-                        <button  class="button-green" id="salvar">Salvar</button>
-                        <button  class="button-blue" id="cancelar">Cancelar</button>
-                    </footer>
+                <button hidden class="button blue mobile" id="cadastrarCliente">Cadastro Paciente</button> <!--Sem isso, não funciona-->
+                <table class="records" id="tableClient">
+                    <thead>
+                        <tr>
+                            <th>Paciente</th>
+                            <th>Nascimento</th>
+                            <th>Consulta</th>
+                            <th>Horarios</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <header class="modal-header">
+                            <h2>Novo Cliente</h2>
+                            <span class="modal-close" id="modalClose">&#10006;</span>
+                        </header>
+                        <form class="modal-form" id="form">
+                            <input type="text" id="Paciente" class="modal-field" placeholder="Nome do Paciente" required>
+                            <input type="date" id ="Nascimento"class="modal-field" placeholder="Nascimento do Paciente" required>
+                            <input type="text" id="Consulta"class="modal-field" placeholder="Consulta" required>
+                            <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
+                        </form>
+                        <footer class="modal-footer">
+                            <button  class="button-green" id="salvar">Salvar</button>
+                            <button  class="button-blue" id="cancelar">Cancelar</button>
+                        </footer>
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
 
-   <main> 
+        <main> 
 
-    <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
-        <div class="titulo-apresentação">Colaboradores</div>
+            <div class="caixa-colaboradores"><a name ="Colaboradores"></a>
+                <div class="titulo-apresentação">Colaboradores</div>
 
-           
-                <div class="max-width">
-                    <div class="imageContainer">
-                        <img src="Imagens/img/Bernardo.jpeg" alt="Selecione uma imagem" id="bernardoImg">
-                        <img src="Imagens/img/Kauã.jpeg" alt="Selecione uma imagem" id="kauaImg">
-                        <img src="Imagens/img/Ígor.png" alt="Selecione uma imagem" id="igorImg">
-                        <img src="Imagens/img/kelwyn.jpeg" alt="Selecione uma imagem" id="kelwynImg">
-                        <img src="Imagens/img/thauan.jpeg" alt="Selecione uma imagem" id="thauanImg">
-                        <img src="Imagens/img/manu.jpeg" alt="Selecione uma imagem" id="manuImg">
-                        
+                
+                        <div class="max-width">
+                            <div class="imageContainer">
+                                <img src="Imagens/img/Bernardo.jpeg" alt="Selecione uma imagem" id="bernardoImg">
+                                <img src="Imagens/img/Kauã.jpeg" alt="Selecione uma imagem" id="kauaImg">
+                                <img src="Imagens/img/Ígor.png" alt="Selecione uma imagem" id="igorImg">
+                                <img src="Imagens/img/kelwyn.jpeg" alt="Selecione uma imagem" id="kelwynImg">
+                                <img src="Imagens/img/thauan.jpeg" alt="Selecione uma imagem" id="thauanImg">
+                                <img src="Imagens/img/manu.jpeg" alt="Selecione uma imagem" id="manuImg">
+                            </div>
+                        </div>
+                    
+                        <input class= "inputColaboradores" type="file" id="imageBernardo" name="fImage" accept="image/*">
+                        <input class= "inputColaboradores" type="file" id="imageKaua" name="fImage" accept="image/*">
+                        <input class= "inputColaboradores" type="file" id="imageIgor" name="fImage" accept="image/*">
+                        <input class= "inputColaboradores" type="file" id="imageKelwyn" name="fImage" accept="image/*">
+                        <input class= "inputColaboradores" type="file" id="imageThauan" name="fImage" accept="image/*">
+                        <input class= "inputColaboradores" type="file" id="imageManu" name="fImage" accept="image/*">
+                                                
+                                    
+                    
+                    
+                    
+                    <div class="nomes-colaboradores">
+                        <ul class="Colaboradores">
+                            <div class="caixas">
+                                <input type="text" id="caixa1" value="Bernardo">
+                                <input type="text" id="caixa2" value="Kauã Silva">
+                                <input type="text" id="caixa3" value="Ígor Centofante">
+                                <input type="text" id="caixa4" value="Kelwyn Krawcyk">
+                                <input type="text" id="caixa5" value="Thauan de Albquerque">
+                                <input type="text" id="caixa6" value="Manuela Lima">
+                            </div> 
+                        </ul>
                     </div>
-                </div>
-            
-                <input class= "inputColaboradores" type="file" id="imageBernardo" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageKaua" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageIgor" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageKelwyn" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageThauan" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageManu" name="fImage" accept="image/*">
-                                           
-                              
-            
-            
-            
-            <div class="nomes-colaboradores">
-                <ul class="Colaboradores">
-                   <div class="caixas">
-                    <input type="text" id="caixa1" value="Bernardo">
-                    <input type="text" id="caixa2" value="Kauã Silva">
-                    <input type="text" id="caixa3" value="Ígor Centofante">
-                    <input type="text" id="caixa4" value="Kelwyn Krawcyk">
-                    <input type="text" id="caixa5" value="Thauan de Albquerque">
-                    <input type="text" id="caixa6" value="Manuela Lima">
-                 
-                </div> 
-                <ul>
             </div>
-    </div>
+        </main>
 
-
-   </main>
-
-   <footer 
+        <footer 
    
-   class="rodapé">
+            class="rodapé">
         
-   </footer>
+        </footer>
 
 
-   <script src="src/js/editarTexto.js"></script>
+        <script src="src/js/editarTexto.js"></script>
 
-   </body>
+    </body>
 
 </html>
 

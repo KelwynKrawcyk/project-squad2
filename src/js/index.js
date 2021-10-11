@@ -91,7 +91,7 @@ function novoPacienteFormulario() {
     createClientForm(client);
   }
 
-  const createClientForm = (client) => {
+const createClientForm = (client) => {
     const dbClient = getLocalStorage()
     dbClient.push (client)
     setLocalStorage(dbClient)}
