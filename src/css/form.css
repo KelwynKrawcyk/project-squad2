@@ -98,7 +98,7 @@ body {
   /* Formulário */
   .form {
     width: clamp(440px, 60%, 560px);
-    margin: 0em 0em 0em 10em;
+    margin: 0em 0em 0em 6em;
     border: 1px solid #ccc;
     border-radius: 0.35rem;
     padding: 1.5em;
@@ -167,6 +167,6 @@ body {
 
   @media screen and (max-width: 480px) { 
     .form{
-      margin-left: 50%;
+      float: center;
     }
   }

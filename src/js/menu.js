@@ -8,8 +8,28 @@ var bottonfechar = document.querySelector("#fecharM")
 
    })
 
+
   bottonfechar.addEventListener("click", (event) =>{
     event.preventDefault()
     menu.style.width = "0em";
 
   })
+
+  function ativaScrollSuave(selector) {
+
+    $(selector).click(function(event) {
+        
+        event.preventDefault();
+        var target = $(this).attr('href');
+        
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500)
+    });
+}
+
+ativaScrollSuave('a[href*=img]');
+ativaScrollSuave('a[href*=sobre-nos]');
+ativaScrollSuave('a[href*=agendamento-online]');
+ativaScrollSuave('a[href*=crud]');
+ativaScrollSuave('a[href*=colaboradores]');

@@ -1,3 +1,7 @@
+.caixa-colaboradores{
+	margin: 0, 0, 50px, 0;
+}
+
 .sobre-nos{
 	display:flex;
 	width: 70%;
@@ -44,8 +48,8 @@
 	margin-left: 5%;
 	margin-top: 2%;
 }
-
 @media(max-width:480px){
+
     .sobre-nos-bg{
 		width:100%;
 	}

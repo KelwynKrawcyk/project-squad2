@@ -5,7 +5,7 @@
 /*font-family: 'EB Garamond', serif;*/
 
 .Mmenu{
-    background-color: #363636;
+    background-color: #618887;
     width: 0em;
     height: 100%;
     position:fixed;
@@ -31,12 +31,9 @@
     border: solid rgb(87, 81, 81);
     height: 6em;
   }
-
-  @media screen and(max-width:480) {
-      .rodapé{
-          width: 100%;
-      }
-  }
+.menu:hover{
+    color:#215351;
+}
 
   @media screen and (max-width: 480px) { 
     .rodapé{
