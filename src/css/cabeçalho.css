@@ -1,5 +1,5 @@
 .button-menu{
-    display: inline;
+    display: block;
     right: 5px;
     font-size: 25px;
     color: white;
@@ -9,13 +9,19 @@
 }
 
 .principal{
-    background-color: #363636;
-    border: solid rgb(87, 81, 81);
+    background-color:rgb(155, 194, 199);
+    border: solid rgb(155, 194, 199);
     display: inline-block;
-    position: fixed;
     width: 100%;
-    margin: 0 auto 500px auto; 
+    margin: 0 auto 150px auto;
     z-index: 1;  
+}
+
+.imagemqueeuodeio{ 
+    position: relative;
+    left: 32%;
+	width:14%;
+    z-index: 2;
 }
 
 .titulo{
@@ -24,16 +30,21 @@
     text-transform: uppercase;
     font-size: 3em;
     color: white;
+    font-family: 'Asap Condensed', sans-serif;
+    position: relative;
+    top: 7vw;
+    margin-left: 14%;
 }
 
 .subtitulo{
+    justify-content: center;
     text-align: center;
-    margin-left: 33%;
-    font-size: 18px;
-    padding-top: 0.3em;
-    padding-bottom: 0.8em;
-    color: white;
-    display: inline-block;
+    font-size: 24px;
+    color: black;
+    position:relative;
+    top: -7vw;
+    margin-left: 14%;
+    font-family: 'EB Garamond', serif;
 }
 
 /*barra de rolamento |que aparecerá quando tiver mais conteudo na tela*/

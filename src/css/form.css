@@ -6,6 +6,7 @@
   *::after {
     box-sizing: border-box;
   }
+
 /*CSS do formulário*/
 body {
     font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -86,13 +87,17 @@ body {
   
   /* Formulário */
   .form {
-    width: clamp(320px, 30%, 430px);
-    margin: 0em 0em 0em 3em;
+    width: clamp(440px, 60%, 560px);
+    margin: 0em 0em 0em 10em;
     border: 1px solid #ccc;
     border-radius: 0.35rem;
     padding: 1.5em;
-    float: left;
+    float: center;
+    margin-bottom: 25%;
+    display: flexbox;
+    
   }
+  
   .form-step {
     display: none;
     transform-origin: top;
@@ -146,8 +151,7 @@ body {
   }
 
   @media screen and (max-width: 480px) { 
-    .sintomas{
-        width: 99%;
-        height: 50px;
+    .form{
+      margin-left: 50%;
     }
   }
