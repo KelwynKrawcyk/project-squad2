@@ -19,7 +19,7 @@
 .colaboradores2 {
     margin-top: 2%;
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     padding: 0rem 0.1rem 0rem 1.5rem;
 }
 * {
@@ -169,7 +169,7 @@ input[type='file'] {
     width: 120px;
     height: auto;
     margin-left: 4%;
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 
@@ -178,7 +178,7 @@ input[type='file'] {
     width: 120px;
     height: auto;
     margin-left: 5%;
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 
@@ -187,7 +187,7 @@ input[type='file'] {
     width: 150px;
     height: auto;
     margin-left:  4%;
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 
@@ -196,25 +196,25 @@ input[type='file'] {
     width: 160px;
     height: auto;
     margin-left: 3%;
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 
 #caixa5 {
     border: 0px solid #111;
-    width: 210px;
+    width: 180px;
     height: auto;
     margin-left: 1%;
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 
 #caixa6 {
     border: 0px solid #111;
-    width: 135px;
+    width: 120px;
     height: auto;
     margin-left: 2%;
-    font-size: 18px;
+    font-size: 15px;
     display: inline;
 }
 

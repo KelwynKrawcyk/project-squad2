@@ -4,46 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 /*font-family: 'EB Garamond', serif;*/
 
-/*.Mmenu{
-    background-color: #363636;
-    width: 0em;
-    height: 100%;
-    position:fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-    transition: width 0.3s;
-}
-.menu{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    left: 5%;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 25px;
-    border-bottom: solid;
-}
-.rodapé{
-    background-color: gray;
-    border: solid rgb(87, 81, 81);
-    height: 6em;
-  }
-
-  @media screen and(max-width:480) {
-      .rodapé{
-          width: 100%;
-      }
-  }
-
-  @media screen and (max-width: 480px) { 
-    .rodapé{
-        width: 150%;
-        height: 5em;
-    }
- } */
  .sidebar{
     position: fixed;
     left: 0;

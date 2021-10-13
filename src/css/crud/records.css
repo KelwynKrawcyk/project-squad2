@@ -9,6 +9,7 @@
     background-color: var(--primary-color);
     padding-left: 20px;
     font-size: 1.2rem;
+    margin-top: 50rem;
 }
 .records td{
     height: 50px;
