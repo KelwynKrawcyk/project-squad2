@@ -31,5 +31,8 @@
       justify-content: center;
       min-height: 0;
     }
+    .carrossel img {
+      width: 90%;
+      height: 30em;
   }
-  
+}
