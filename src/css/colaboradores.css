@@ -221,8 +221,8 @@ input[type='file'] {
 .linkedin {
     display: inline-block;
     font-size: 20px;
-    padding-right: 35px;
-    margin-left: 100px;
+    padding-right: 1em;
+    margin-left: 5em;
     padding-bottom: 5%;
 }
 
