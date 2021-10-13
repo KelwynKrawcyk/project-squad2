@@ -1,0 +1,182 @@
+
+.config{
+    text-align: center;
+    font-size: 20px;
+}
+.configLT{
+    color: #FFFFFF;
+    font-style: bold;
+    font-size: 25px;
+    padding:20px;
+    text-align: center;
+}
+.configPanel{
+    text-align: left;
+    color: #FFFFFF; 
+    background-color: rgb(155, 194, 199);
+    display: inline-block;
+    width: 45%;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border:  solid 2px#121212;
+    border-radius: 8px;
+}
+.inputConfig, .inputConfigTitulo, .inputConfigSubtitulo{
+    width: 90%;
+    padding:20px;
+    margin: 1em;
+    border-radius: 8px;
+    border:  solid 2px#121212;
+}
+.configPanel, .botoesConfigConfirmar, .botoesConfigDesfazer{
+    padding:10px;
+    margin: 1em;
+}
+.lisconfig{
+    margin-bottom: 5px;
+}
+.lisconfig , label{
+    margin-left: 1em;
+}
+/*painel de configurações do Sobre/Resumo */
+
+.painelDoResumo{
+    padding-top: 10px;
+    
+}
+.painelDoResumo  h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.painel-resumo{
+    margin-bottom: 20px;
+}
+.botoesConfigConfirmar, .botoesConfigDesfazer{
+    padding: 0.75rem;
+    display: inline;     
+    text-decoration: none;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 1em;
+}
+.botoesConfigConfirmar{
+    background-color: #36a813; 
+}
+.botoesConfigDesfazer{
+    background-color: #ff4949; 
+}
+
+.inputConfigTitulo, .inputConfigSubtitulo{
+    text-align: center; 
+    width:90%
+}
+
+.modal1{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+    overflow-y: scroll;
+}
+
+.modal1.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 50vw;
+    margin: 5vh auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.modal-header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem;
+}
+
+
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    background-color: #FF4949;
+    color: white;
+}
+
+.modal-form1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* gap: 20px; */
+    padding: 0 20px;
+    overflow-y: scroll;
+}
+
+.modal-field{
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size:1rem;
+}
+
+.modal-field:focus{
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
+
+.modal-footer{
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+    .modal-field{
+        width:100%;
+    }
+}

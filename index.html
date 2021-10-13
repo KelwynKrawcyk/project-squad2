@@ -2,7 +2,7 @@
 <html>
     <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
      <title>Hospital</title>
 
@@ -20,6 +20,7 @@
      <link rel="stylesheet" href="src/css/carrossel.css">
      <link rel="stylesheet" href="src/css/sobre-nos.css">
      <link rel="stylesheet" href="src/css/carrossel-sobre.css">
+    <link rel="stylesheet" href="src/css/config.css">
      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
      <script src="src/js/carrossel.js" defer></script>
@@ -30,6 +31,7 @@
      <script src="src/js/menu.js" defer></script>
      <script src="src\js\mascaraTelefone.js" defer></script>
      <script src="src/js/jquery.js" defer></script>
+     <script src="src/js/config.js" defer></script>
      <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
      
     </head>
@@ -40,9 +42,9 @@
             <div class="barra-de-navegação">
                 <nav class="principal">
                     
-                    <h1 id= "titulo" class="titulo">Hospital Panaceia</h1>
+                    <h1 class="titulo" id="titulo">Hospital Panaceia</h1>
                     <img class="imagemqueeuodeio" src=Imagens\img\logooficial.png>
-                    <h2 class="subtitulo">Desde 1947 salvando vidas</h2>
+                    <h2 class="subtitulo" id="subtitulo">Desde 1947 salvando vidas</h2>
                        <div class="sidebar">
                         <div class="logo-details">
                             <i name='menu'></i>
@@ -86,7 +88,7 @@
                            <span class="tooltip">Colaboradores</span>
                          </li>
                          <li>
-                           <a href="#">
+                           <a href="" id="cadastrarCliente">
                             <i class='bx bx-cog'></i>
                              <span class="links_name">Configurações</span>
                            </a>
@@ -276,7 +278,7 @@
             <h1 class="header-title">Cadastro de Paciente</h1>
             </div>
             <div class="main-cadatro"> 
-                <button hidden class="button blue mobile" id="cadastrarCliente">Cadastro Paciente</button> <!--Sem isso, não funciona-->
+                
                 <table class="records" id="tableClient">
                     <thead>
                         <tr>
@@ -355,7 +357,42 @@
             </div>
 
         </main>
-
+        <div class="modal1" id="modal">
+            <div class="modal-content1">
+                <div  class="modal-header1">
+                    <span class="modal-close" id="modalClose1">&#10006;</span>
+                </div>
+                     <div class="config">
+                       <form class="modal-form1" id="form">
+                        <form class="configPanel">
+                        <div class="lisconfig">
+                            <label for="input1">Botão titulo</label>
+                            <input id="input1" type="text" placeholder="Modificar">
+                            <button class="botoesConfigConfirmar" id="botao-confirmar">Salvar</button>
+                            <button class="botoesConfigDesfazer" id="botao-cancela">Desfazer</button>
+                        </div>
+                        <div class="lisconfig">
+                            <label for="input2">Botão subtitulo</label>
+                            <input id="input2" type="text" placeholder="Modificar">
+                            <button class="botoesConfigConfirmar" id="botao-confirmar2">Salvar</button>
+                            <button class="botoesConfigDesfazer" id="botao-cancela2">Desfazer</button>
+                        </div>
+                        <div class="lisconfig">
+                            <label for="input3">Botão Sobre</label>
+                            <input id="input3" type="text" placeholder="Modificar">
+                            <button class="botoesConfigConfirmar" id="botao-confirmar3">Salvar</button>
+                            <button class="botoesConfigDesfazer" id="botao-cancela3">Desfazer</button>
+                        </div>
+                        <div class="lisconfig">
+                            <label for="input4">Botão Consultas </label>
+                            <input id="input4" type="text" placeholder="Modificar">
+                            <button class="botoesConfigConfirmar" id="botao-confirmar4">Salvar</button>
+                            <button class="botoesConfigDesfazer" id="botao-cancela4">Desfazer</button>
+                        </div>
+                   </div>
+                </form>
+                 </div>
+             </div>  
         <footer 
    
             class="rodapé">

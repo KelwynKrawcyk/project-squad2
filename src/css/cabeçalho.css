@@ -21,7 +21,7 @@
     position: relative;
     left: 32%;
 	width:14%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .titulo{
