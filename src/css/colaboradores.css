@@ -6,7 +6,7 @@
     margin-left: 8%;
     margin-right: 8%;
     width: 84%;
-    height: 15.75rem;
+    height: 18.75rem;
     border-radius: 0.35rem;
 }
 
@@ -216,6 +216,14 @@ input[type='file'] {
     margin-left: 2%;
     font-size: 15px;
     display: inline;
+}
+
+.linkedin {
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 35px;
+    margin-left: 100px;
+    padding-bottom: 5%;
 }
 
 @media screen and (max-width: 480px) { 

@@ -26,9 +26,7 @@
      <script src="src/js/form.js" defer></script>
      <script src="src/js/carrossel-sobre.js" defer></script>
      <script src="src/js/index.js" defer></script>
-     <script src="src/js/script.js" defer></script>
-     <script src="src/js/jquery.js" defer></script>
-     <script src="src/js/editarTexto.js"></script> 
+     <script src="src/js/script.js" defer></script> 
      <script src="src/js/menu.js" defer></script>
      <script src="src\js\mascaraTelefone.js" defer></script>
      <script src="src/js/jquery.js" defer></script>
@@ -42,7 +40,7 @@
             <div class="barra-de-navegação">
                 <nav class="principal">
                     
-                    <h1 class="titulo">Hospital Panaceia</h1>
+                    <h1 id= "titulo" class="titulo">Hospital Panaceia</h1>
                     <img class="imagemqueeuodeio" src=Imagens\img\logooficial.png>
                     <h2 class="subtitulo">Desde 1947 salvando vidas</h2>
                        <div class="sidebar">
@@ -132,12 +130,22 @@
         </section>
 
         <!-- Sobre nós -->
+
         <section class="sobre-nos">
             <div class="sobre-nos-painel">
                 <h1 class= "sobre-nos-titulo" id="sobre-nos">SOBRE NÓS</h1>
-                <div class="sobre-nos-bg"> <h2 id = "editarSobre" class= "sobre-nos-sub">Construído em  1947, o Hospital Panaceia tem como objetivo o conforto e segurança para seus pacientes.  Há 74 anos mantemos nosso lema sobre que a transformação é algo natural para todos. Sempre com muito conforto recebemos diversos pacientes não só do estado, mas também do país inteiro. Os melhores profissionais do país estão aqui. Venha logo marcar sua consulta.</h2></div>
+                <div class="sobre-nos-bg">
+                    <h2 id = "editarSobre" class= "sobre-nos-sub">
+                        Construído em  1947, o Hospital Panaceia tem como objetivo o conforto e segurança para seus pacientes.  Há 74 anos mantemos nosso lema sobre que a transformação é algo natural para todos. Sempre com muito conforto recebemos diversos pacientes não só do estado, mas também do país inteiro. Os melhores profissionais do país estão aqui. Venha logo marcar sua consulta.
+                    </h2>
+                </div>
             </div>
-            <div class="sobre-nos-img"> <img src="Imagens\img\Teto-realiza-projeto-mobiliario-do-Hospital-Albert-Einstein-de-Goiania-em-apenas-cinco-meses.jpg" alt="recepção"/></div>
+
+            <div class="sobre-nos-img">
+                <img
+                src="Imagens\img\Teto-realiza-projeto-mobiliario-do-Hospital-Albert-Einstein-de-Goiania-em-apenas-cinco-meses.jpg"
+                alt="recepção"/>
+            </div>
         </section>
       
         <article class="consultas-disponiveis">
@@ -170,98 +178,102 @@
             </ul>            
         </article>
         
-        <form action="https://formspree.io/f/mbjqbqpe" method="POST" class="form" id="agendamento-online">
-            <h1 class="text-center">Consulta Online</h1>
-
-            <!-- Barra de progresso -->
-            <div class="progressbar">
-                <div class="progress" id="progress"></div>
-                <div class="progress-step progress-step-active" data-title="Dados"></div>
-                <div class="progress-step" data-title="Contato"></div>
-                <div class="progress-step" data-title="Consulta"></div>
-                <div class="progress-step" data-title="Agenda"></div>
-            </div>
-
-            <!-- Passos -->
-            <div class="form-step form-step-active">
-                <div class="input-group">
-                    <label for="name">Nome e sobrenome</label required>
-                    <input type="text" name="message" id="username"/>
-                </div>
-                <div class="input-group">
-                    <label for="dob">Data de nascimento</label required>
-                    <input type="date" name="message" id="dob"/>
-                </div>
-                <div class="">
-                    <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
-                </div>
-            </div>
-            <div class="form-step">
-                <div class="input-group">
-                    <label for="phone">Telefone</label>
-                    <input type="text" name="phone" id="phone" required placeholder="(XX) XXXXX-XXXX"
-                    minlength="9" maxlength="15"/>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="_replyto" id="email" required placeholder="seuemail@dominio.com" />
-                </div>
-                <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Anterior</a>
-                    <a href="#" class="btn btn-next">Próximo</a>
-                </div>
-            </div>
-            <div class="form-step">
-                <div class="input-group">
-                    <fieldset>
-                        <label>Tipo de consulta</label>
-                        <select id="tdpd" class="tipo-consulta" name="message">
-                            <option>Cardiologia</option>    
-                            <option>Dermatologia</option>
-                            <option>traumatologia</option>
-                            <option>Pediatria</option>
-                            <option>Psiquiatria</option>
-                            <option>Clinico geral</option>
-                            <option>Nutrição</option>
-                            <option>Odontologia</option>
-                            <option>Neurologia</option>
-                            <option>Oftamologia</option>
-                            <option>fisioterapia</option>
-                            <option>Vacinação</option>
-                        </select>
-                    </fieldset>
-                </div>
-                <div class="input-group">
-                    <label for="mensagem">Descreva os seus sintomas</label>
-                    <textarea style="resize: none" cols="45" rows="3" name="message" class="sintomas"></textarea>
-                </div>
-                <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Anterior</a>
-                    <a href="#" class="btn btn-next">Próximo</a>
-                </div>
-            </div>
-            <div class="form-step">
-                <div class="input-group">
-                    <label for="dob">Data da consulta</label>
-                    <input type="date" name="message" id="dob" required />
-                </div>
-                <div class="input-group">
-                    <label for="dob">Horário da consulta</label>
-                    <input type="time" id="appt" name="message" 
-                    min="08:00" max="17:00" required>
-                </div>
-                <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Anterior</a>
-                    <button onclick="novoPacienteFormulario()" type="submit" value="Enviar formulário" class="btn">Enviar formulário</button> 
-                </div>
-            </div>
+        <form action="https://formspree.io/f/mbjqbqpe" method="POST" class="form">
+    
+                <h1 class="text-center" id="consultas-online">Consulta Online</h1>
+                    <!-- Barra de progresso -->
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+                        
+                        <div
+                            class="progress-step progress-step-active"
+                            data-title="Dados">
+                        </div>
+                        <div class="progress-step" data-title="Contato"></div>
+                        <div class="progress-step" data-title="Consulta"></div>
+                        <div class="progress-step" data-title="Agenda"></div>
+                    </div>
+    
+                    <!-- Passos -->
+                    <div class="form-step form-step-active">
+                        <div class="input-group">
+                            <label for="name">Nome e sobrenome</label required>
+                            <input type="text" name="message" id="username"/>
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Data de nascimento</label required>
+                            <input type="date" name="message" id="dob"/>
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="phone">Telefone</label>
+                            <input type="text" name="phone" id="phone" required placeholder="(XX) XXXXX-XXXX"
+                            minlength="9" maxlength="15"/>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="_replyto" id="email" required placeholder="seuemail@dominio.com" />
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <a href="#" class="btn btn-next">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <fieldset>
+                                <label>Tipo de consulta</label >
+                                <select id="tdpd" class="tipo-consulta" name="message">
+                                    <option>Cardiologia</option>    
+                                    <option>Dermatologia</option>
+                                    <option>traumatologia</option>
+                                    <option>Pediatria</option>
+                                    <option>Psiquiatria</option>
+                                    <option>Clinico geral</option>
+                                    <option>Nutrição</option>
+                                    <option>Odontologia</option>
+                                    <option>Neurologia</option>
+                                    <option>Oftamologia</option>
+                                    <option>fisioterapia</option>
+                                    <option>Vacinação</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem">Descreva os seus sintomas</label>
+                            <textarea style="resize: none" cols="45" rows="3" name="message" class="sintomas"></textarea>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <a href="#" class="btn btn-next">Próximo</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="dob">Data da consulta</label>
+                            <input type="date" name="message" id="dob" required />
+                        </div>
+                        <div class="input-group">
+                            <label for="dob">Horário da consulta</label>
+                            <input type="time" id="appt" name="message" 
+                            min="08:00" max="17:00" required>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-prev">Anterior</a>
+                            <button onclick="novoPacienteFormulario()" type="submit" value="Enviar formulário" class="btn">Enviar formulário</button> 
+                        </div>
+                    </div>
         </form>
 
    
         <!--CRUD-->
-        <section class="container12" id="crud"> 
+        <section class="container12"> 
             <div class="cadastro"> 
-                <h1 class="header-title">Cadastro de Paciente</h1>
+            <h1 class="header-title">Cadastro de Paciente</h1>
             </div>
             <div class="main-cadatro"> 
                 <button hidden class="button blue mobile" id="cadastrarCliente">Cadastro Paciente</button> <!--Sem isso, não funciona-->
@@ -290,8 +302,8 @@
                             <input type="time" id="Horarios"class="modal-field" placeholder="Horarios" required>
                         </form>
                         <footer class="modal-footer">
-                            <button class="button-green" id="salvar">Salvar</button>
-                            <button class="button-blue" id="cancelar">Cancelar</button>
+                            <button  class="button-green" id="salvar">Salvar</button>
+                            <button  class="button-blue" id="cancelar">Cancelar</button>
                         </footer>
                     </div>
                 </div>
@@ -322,10 +334,6 @@
                         <input class= "inputColaboradores" type="file" id="imageThauan" name="fImage" accept="image/*">
                         <input class= "inputColaboradores" type="file" id="imageManu" name="fImage" accept="image/*">
                                                 
-                                    
-                    
-                    
-                    
                     <div class="nomes-colaboradores">
                         <ul class="Colaboradores">
                             <div class="caixas">
@@ -338,18 +346,26 @@
                             </div> 
                         </ul>
                     </div>
-                </div>
-                
-                <input class= "inputColaboradores" type="file" id="imageBernardo" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageKaua" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageIgor" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageKelwyn" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageThauan" name="fImage" accept="image/*">
-                <input class= "inputColaboradores" type="file" id="imageManu" name="fImage" accept="image/*">
-                        
+                    <a href="https://www.linkedin.com/in/bernardo-alves-61605b221/"><p class="linkedin">Linkedin</p></a>
+                    <a href="https://www.linkedin.com/in/kauã-da-silva-gonçalves/"><p class="linkedin">Linkedin</p></a>
+                    <a href="https://www.linkedin.com/in/ígor-centofante/"><p class="linkedin">Linkedin</p></a>
+                    <a href="https://www.linkedin.com/in/kelwynkrawcyk/"><p class="linkedin">Linkedin</p></a>
+                    <a href="https://www.linkedin.com/in/thauan-de-albquerque-oliveira-dev/"><p class="linkedin">Linkedin</p></a>
+                    <a href="https://www.linkedin.com/in/manuela-lima-83b08a1b4/"><p class="linkedin">Linkedin</p></a>
+            </div>
+
         </main>
+
         <footer 
+   
             class="rodapé">
+        
         </footer>
+
+
+        <script src="src/js/editarTexto.js"></script>
+
     </body>
+
 </html>
+
