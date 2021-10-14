@@ -3,10 +3,8 @@
   let fechar = document.querySelector("#btn");
   
 
-  fechar.addEventListener("click", ()=>{
-    abrir.classList.toggle("open");
-    menuBtnChange();
-  });
+fechar.addEventListener("click", () =>{
+abrir.classList.toggle("open");});
 
   
  
