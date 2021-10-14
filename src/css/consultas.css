@@ -1,169 +1,56 @@
-.consultas-disponiveis{
-    background-color: rgb(155, 194, 199);
-    border: solid rgb(87, 81, 81);
-    padding: 1em;
-    border-radius: 1.3em;
-    float: right;
-    margin-right: 2em;
-    width:35em;
-    height:38em;
+.consultas-disponiveis {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: rgb(155, 194, 199);
+  border: solid rgb(87, 81, 81);
+  padding: 1em;
+  border-radius: 1.3em;
+  float: right;
+  margin-right: 2em;
+  width: 35em;
 }
 
-.consultas-titulo{
-    padding: 1em 1em 1em 1em;
-    border: solid rgba(97.00000181794167, 136.00000709295273, 135.00000715255737, 1);
-    border-radius: 0.5em;
-    background-color:rgba(97.00000181794167, 136.00000709295273, 135.00000715255737, 1);
+.consultas-titulo {
+  grid-column: span 3;
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+  border: solid #618887;
+  border-radius: 0.5em;
+  background-color: #618887;
 }
 
-.bloco-consultas{
-   font-weight: bold;
+.con-elemento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
-.img-cardio{
-    width: 3em;
-  position: absolute;
-    margin: 1em 0em 0em 0em;
+.con-elemento li {
+  list-style-type: none;
+  font-size: 15px;
 }
 
-.img-odonto{
-    width: 3em;
-    display: inline-block;
-    position:absolute;
+.img-icone {
+  width: 40px;
 }
 
-.img-derma{
-    width: 3em;
-    display: inline-block;
-    position: absolute;
-    margin-top: 0em;
+.bloco-consultas {
+  font-weight: bold;
 }
 
-.img-neuro{
-    width: 3em;
-    display: inline-block;
-    position: absolute;
-    margin-top: 0em;
-}
+@media screen and (max-width: 600px) {
+  .img-icone {
+    width: 25px;
+  }
 
-.img-psico{
-    width: 3em;
-    position: absolute;
-    margin: 1em 0em 0em 16em
-}
-
-.img-nutri{
-    width: 3em;
-    position: absolute;
-    margin:1em 0em 0em 16em
-}
-
-.img-ofta{
-    width: 3em;
-    position: absolute;
-    margin: 1em 0em 0em 16em;
-}
-
-.img-pediatria{
-    width: 3em;
-    position: absolute;
-    margin: 1em 0em 0em 16em;
-}
-
-.img-clinico{
-    width: 3em;
-   float: right;
-   margin-left: 1em;
-}
-
-.img-fisioterapia{
-    width: 3em;
-    float: right;
-}
-
-.img-vacina{
-    width: 3em;
-    float: right;
-}
-
-.img-trauma{
-    width: 3em;
-    float: right;
-}
-
-.cardio{
-   padding: 1em 0em 0em 3em; 
-}
-
-.odonto{
-    margin: 0em 0em 2em 4em;
-    clear: left;
-}
-
-.derma{
-    margin: 0em 0em 2em 4em;
-    clear: left;
-}
-
-.neuro{
-    margin: 0em 0em 2em 4em;
-    clear: left;
-} 
-
-.psico{
-    margin: 0em 0em 0em 1em;
-    text-align: center;
-}
-
-.nutri{
-    margin: 0em 0em 0em 1em;
-    text-align: center;
-}
-
-.ofta{
-    margin: 0em 0em 0em 1em;
-    text-align: center;
-}
-
-.pediatria{
-    margin: 0em 0em 0em 1em;
-    text-align: center;
-}
-
-.clinico{
-    margin: 0em 0em 4em 6em;
-    text-align: right;
-}
-
-.fisioterapia{
-    margin: 0em 0em 4em 6em;
-    text-align: right;
-}
-
-.vacina{
-    margin: 0em 0em 3em 7em;
-    text-align: right;
-}
-
-.trauma{
-    margin: 0em 0em 3em 7em;
-    text-align: right;
-}
-
-@media screen and (max-width: 480px){
-    .consultas-disponiveis,.consultas-titulo, .cardio, .odonto, .derma,.neuro, .psico,.nutri,.ofta, .pediatria, .clinico, .fisioterapia, .vacina,.trauma{
-        width:auto;
-        clear: right;
-    }
-
-    .img-cardio, .img-odonto,.img-derma,.img-neuro,.img-clinico, .img-fisioterapia, .img-vacina, .img-trauma{
-        width: 2em;
-        
-       float: left;
-       margin-bottom: 4em;
-    }
-    .img-psico, .img-nutri,.img-ofta, .img-pediatria{
-        width: 2em;
-        margin-left: 2em;
-    }
+  .consultas-disponiveis {
+    width: 80%;
+    float: none;
+    margin-bottom: 20px;
+    margin-left: 19%;
+    margin-right: 0;
+  }
 }

@@ -1,56 +1,72 @@
-.caixa-colaboradores{
-	margin: 0, 0, 50px, 0;
+.caixa-colaboradores {
+  margin: 0, 0, 50px, 0;
 }
 
-.sobre-nos{
-	display:flex;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 200px;
-	padding:20px;
+.sobre-nos {
+  display: flex;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 200px;
+  padding: 20px;
 }
 
-.sobre-nos-painel{
-	width:50%;
-	text-align:center;
-	padding: 20px;
-	display:inline-block;
-	padding-bottom: 30%;
+.sobre-nos-painel {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+  padding-bottom: 30%;
 }
 
-.sobre-nos-titulo{
-	font-size:40px;
-	margin-bottom:20px;
-	font-family: 'Asap Condensed', sans-serif;
-	color:black;
+.sobre-nos-titulo {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: "Asap Condensed", sans-serif;
+  color: black;
 }
 
-.sobre-nos-bg{
-	padding: 20px;
-	width:100%;
-	background-color:rgba(97.00000181794167, 136.00000709295273, 135.00000715255737, 1);
-	border-radius: 30px;
+.sobre-nos-bg {
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(
+    97.00000181794167,
+    136.00000709295273,
+    135.00000715255737,
+    1
+  );
+  border-radius: 30px;
 }
 
-.sobre-nos-sub{
-	font-family: 'EB Garamond', serif;
-	font-size: 20px;
-	width:80%;
-	margin: 0px 10%;
-	line-height: 23px;
+.sobre-nos-sub {
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  width: 80%;
+  margin: 0px 10%;
+  line-height: 23px;
 }
 
 .sobre-nos-img img {
-	display:inline-block;
-	width:100%;
-	border-radius:30px;
-	margin-left: 5%;
-	margin-top: 2%;
+  display: inline-block;
+  width: 100%;
+  border-radius: 30px;
+  margin-left: 5%;
+  margin-top: 2%;
 }
-@media(max-width:480px){
+@media (max-width: 700px) {
+  .sobre-nos {
+    flex-direction: column;
+    margin-top: 0;
+    width: 80%;
+    margin-right: 0;
+  }
 
-    .sobre-nos-bg{
-		width:100%;
-	}
+  .sobre-nos-painel {
+    width: 110%;
+    padding-bottom: 10px;
+  }
+
+  .sobre-nos-bg {
+    width: 100%;
+  }
 }
